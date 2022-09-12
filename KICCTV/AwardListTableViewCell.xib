@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AwardTableCell" rowHeight="62" id="8XL-Kh-YFH" customClass="AwardListTableViewCell" customModule="Justwatchme_tv" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8XL-Kh-YFH" id="0hU-6s-cII">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kb4-bH-zZd">
+                        <rect key="frame" x="8" y="4" width="359" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMf-ro-QrX">
+                        <rect key="frame" x="8" y="8" width="359" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="QMf-ro-QrX" secondAttribute="trailing" constant="8" id="0xt-Ui-4cx"/>
+                    <constraint firstItem="QMf-ro-QrX" firstAttribute="top" secondItem="Kb4-bH-zZd" secondAttribute="bottom" constant="4" id="Ewf-yx-4dB"/>
+                    <constraint firstItem="Kb4-bH-zZd" firstAttribute="top" secondItem="0hU-6s-cII" secondAttribute="top" constant="4" id="PSn-4G-ucR"/>
+                    <constraint firstAttribute="trailing" secondItem="Kb4-bH-zZd" secondAttribute="trailing" constant="8" id="Rsm-3M-1oq"/>
+                    <constraint firstItem="Kb4-bH-zZd" firstAttribute="leading" secondItem="0hU-6s-cII" secondAttribute="leading" constant="8" id="S9B-8K-kYo"/>
+                    <constraint firstItem="QMf-ro-QrX" firstAttribute="leading" secondItem="0hU-6s-cII" secondAttribute="leading" constant="8" id="h6x-2Y-Scv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="awardName" destination="Kb4-bH-zZd" id="S7V-cE-zE1"/>
+                <outlet property="year" destination="QMf-ro-QrX" id="ulI-iX-n2h"/>
+            </connections>
+            <point key="canvasLocation" x="29.600000000000001" y="17.091454272863569"/>
+        </tableViewCell>
+    </objects>
+</document>

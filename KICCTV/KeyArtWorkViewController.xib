@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyArtWorkViewController" customModule="PROJECT46" customModuleProvider="target">
+            <connections>
+                <outlet property="closeButton" destination="DnW-IJ-HJj" id="naY-5U-JwT"/>
+                <outlet property="countLabel" destination="n4e-ag-VqY" id="7fw-qT-3a8"/>
+                <outlet property="imageCollectionView" destination="3Ar-rx-yXL" id="G0G-Ql-wON"/>
+                <outlet property="imageCollectionViewWidth" destination="8uI-kR-zCk" id="yDd-Wy-IjH"/>
+                <outlet property="mainView" destination="Vo1-TK-bDl" id="aSz-Mg-YD3"/>
+                <outlet property="mainViewHeight" destination="1ru-PV-5Px" id="06g-s5-U7z"/>
+                <outlet property="mainViewWidth" destination="FcL-G6-MbE" id="jHS-fC-hgU"/>
+                <outlet property="nextButton" destination="9HM-vy-Cz5" id="Zxk-ho-Tnv"/>
+                <outlet property="previousButton" destination="iz9-sJ-oo1" id="Vgf-FO-e4V"/>
+                <outlet property="view" destination="Tzc-hu-fkA" id="2Gw-n2-ivX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Tzc-hu-fkA">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vo1-TK-bDl">
+                    <rect key="frame" x="0.0" y="628" width="414" height="260"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="3Ar-rx-yXL">
+                            <rect key="frame" x="207" y="8" width="0.0" height="222"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" id="8uI-kR-zCk"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hqk-kn-G9e">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="zax-vN-Yn4"/>
+                                <outlet property="delegate" destination="-1" id="axX-yC-Hxk"/>
+                            </connections>
+                        </collectionView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HM-vy-Cz5">
+                            <rect key="frame" x="339" y="219.5" width="67" height="32.5"/>
+                            <color key="tintColor" red="0.72941176470588232" green="0.039215686274509803" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain">
+                                <attributedString key="attributedTitle">
+                                    <fragment content="NEXT">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="NextAction:" destination="-1" eventType="touchUpInside" id="75Z-tW-AQI"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iz9-sJ-oo1">
+                            <rect key="frame" x="8" y="219.5" width="68" height="32.5"/>
+                            <color key="tintColor" red="0.72941176470588232" green="0.039215686274509803" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain">
+                                <attributedString key="attributedTitle">
+                                    <fragment content="PREV">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="previousAction:" destination="-1" eventType="touchUpInside" id="nVr-cm-Pt2"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n4e-ag-VqY">
+                            <rect key="frame" x="207" y="227" width="0.0" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="fCU-SF-ctk"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" systemColor="systemGray2Color"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DnW-IJ-HJj">
+                            <rect key="frame" x="384" y="8" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="ce9-o7-QoB"/>
+                                <constraint firstAttribute="width" constant="30" id="siN-NX-AvU"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="CloseButtonImage">
+                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="closeAction:" destination="-1" eventType="touchUpInside" id="EBo-wc-lzv"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="3Ar-rx-yXL" firstAttribute="centerX" secondItem="Vo1-TK-bDl" secondAttribute="centerX" id="139-YY-KMa"/>
+                        <constraint firstAttribute="height" constant="260" id="1ru-PV-5Px"/>
+                        <constraint firstAttribute="trailing" secondItem="9HM-vy-Cz5" secondAttribute="trailing" constant="8" id="38G-g1-jE2"/>
+                        <constraint firstItem="DnW-IJ-HJj" firstAttribute="top" secondItem="Vo1-TK-bDl" secondAttribute="top" constant="8" id="BWV-D7-mvP"/>
+                        <constraint firstAttribute="trailing" secondItem="DnW-IJ-HJj" secondAttribute="trailing" id="Ctr-ui-Okv"/>
+                        <constraint firstItem="3Ar-rx-yXL" firstAttribute="top" secondItem="Vo1-TK-bDl" secondAttribute="top" constant="8" id="DHL-lK-ZiB"/>
+                        <constraint firstAttribute="width" constant="414" id="FcL-G6-MbE"/>
+                        <constraint firstItem="iz9-sJ-oo1" firstAttribute="leading" secondItem="Vo1-TK-bDl" secondAttribute="leading" constant="8" id="huP-o2-DDg"/>
+                        <constraint firstItem="n4e-ag-VqY" firstAttribute="centerX" secondItem="3Ar-rx-yXL" secondAttribute="centerX" id="k1e-NJ-RAm"/>
+                        <constraint firstItem="iz9-sJ-oo1" firstAttribute="bottom" secondItem="Vo1-TK-bDl" secondAttribute="bottom" constant="-8" id="nAB-AV-TXK"/>
+                        <constraint firstAttribute="bottom" secondItem="3Ar-rx-yXL" secondAttribute="bottom" constant="30" id="nVW-wP-wRv"/>
+                        <constraint firstItem="n4e-ag-VqY" firstAttribute="bottom" secondItem="iz9-sJ-oo1" secondAttribute="bottom" constant="-4" id="tdh-PS-ebm"/>
+                        <constraint firstAttribute="bottom" secondItem="9HM-vy-Cz5" secondAttribute="bottom" constant="8" id="uHn-df-Tj6"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vrg-io-1MR"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Vo1-TK-bDl" firstAttribute="leading" secondItem="Tzc-hu-fkA" secondAttribute="leading" id="Ffg-O8-odb"/>
+                <constraint firstAttribute="bottom" secondItem="Vo1-TK-bDl" secondAttribute="bottom" constant="8" id="Kbd-g9-Q8P"/>
+                <constraint firstAttribute="trailing" secondItem="Vo1-TK-bDl" secondAttribute="trailing" id="MHX-mu-wf9"/>
+            </constraints>
+            <point key="canvasLocation" x="445" y="79"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CloseButtonImage" width="50" height="50"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

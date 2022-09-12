@@ -1,0 +1,41 @@
+{
+  "UserAgent": "MobileHub/1.0",
+  "Version": "1.0",
+  "CredentialsProvider": {
+    "CognitoIdentity": {
+      "Default": {
+        "PoolId": "us-east-1:2c0682a4-8de8-4285-a919-ab4fab5d26db",
+        "Region": "us-east-1"
+      }
+    }
+  },
+  "IdentityManager": {
+    "Default": {}
+  },
+  "ContentManager": {
+    "Default": {
+      "Bucket": "videoapp-hosting-mobilehub-1670704546",
+      "Region": "us-east-1",
+      "CloudFrontURL": "https://dvyh5yjf9hurg.cloudfront.net"
+    }
+  },
+  "PinpointAnalytics": {
+    "Default": {
+      "AppId": "069e73c5a5fa4fe9a38abf6163a243b6",
+      "Region": "us-east-1"
+    }
+  },
+  "PinpointTargeting": {
+    "Default": {
+      "Region": "us-east-1"
+    }
+  },
+    "UserFileManager": {
+       "Default": {
+           "PoolId": "us-east-1:2c0682a4-8de8-4285-a919-ab4fab5d26db",
+           "Region": "us-east-1",
+           "Bucket": "videoapp-hosting-mobilehub-1670704546",
+
+       }
+    }
+}

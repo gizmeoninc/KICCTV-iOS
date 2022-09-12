@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <html lang="en"><head><style class="vjs-styles-defaults">
+
+              .video-js {
+
+                width: 300px;
+
+                height: 150px;
+
+              }
+
+
+
+              .vjs-fluid {
+
+                padding-top: 56.25%
+
+              }
+
+            </style><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="/manifest.json"><link rel="shortcut icon" href="/logo.png"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/videojs-seek-buttons/dist/videojs-seek-buttons.css"><title>ISG TV</title><meta name="description" content="$OG_DESCRIPTION"><meta property="og:title" content="ISG TV"><meta property="og:description" content="$OG_DESCRIPTION"><meta property="og:image" content="$OG_IMAGE"><meta property="og:url" content="$OG_URL"><link rel="stylesheet" href="//googleads.github.io/videojs-ima/node_modules/video.js/dist/video-js.min.css"><link rel="stylesheet" href="//googleads.github.io/videojs-ima/node_modules/videojs-contrib-ads/dist/videojs.ads.css"><link rel="stylesheet" href="//googleads.github.io/videojs-ima/dist/videojs.ima.css"><style>.svgLoader{animation:spin .5s linear infinite;margin:auto}.divLoader{width:100vw;height:100vh;background-color:#f5f5f5;display:flex;align-items:center;justify-content:center}@keyframes spin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}</style><link href="/static/css/2.e34f38d2.chunk.css" rel="stylesheet"><link href="/static/css/main.5086b64b.chunk.css" rel="stylesheet"><style type="text/css">@keyframes fadeInUp {
+
+            from {
+
+                opacity: 0;
+
+                -webkit-transform: translate3d(0, 100%, 0);
+
+                transform: translate3d(0, 100%, 0);
+
+              }
+
+              to {
+
+                opacity: 1;
+
+                -webkit-transform: none;
+
+                transform: none;
+
+              }
+
+        }
+
+
+
+        .toasts-container {
+
+          position: fixed;
+
+          overflow: hidden;
+
+          z-index: 999999999999;
+
+          max-height: calc(100vh - 10px);
+
+          text-align: right;
+
+          display: flex;
+
+          flex-direction: column;
+
+          align-items: flex-end;
+
+        }
+
+
+
+        .toast {
+
+          font-family: 'Arial';
+
+          display: flex;
+
+          align-items: center;
+
+          text-align: center;
+
+          padding: 5px 15px;
+
+          white-space: pre-line;
+
+          min-height: 50px;
+
+          margin-bottom: 15px;
+
+          border-radius: 5px;
+
+          animation-name: fadeInUp;
+
+          animation-duration: 1s;
+
+          animation-fill-mode: both;
+
+        }</style><script src="https://js.stripe.com/v3"></script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><div><header class="headerMenu headerWidth headerWhite headerGradient"><div class="screenContainer"><div class=""></div></div><div class="container headerWrapper"><div class="logosection"><div class="logoContain" style="width: 250px; padding-top: 4px;"><div class="menuIcon" rel="nofollow"><span class="hamburger"></span></div><div class="menuItemContainer"><div class="menuWrapper"><div class="mobileSearch"><section class="searchContainer mobileSearchBG"></section></div><div class="menuRowItem"><div class="menuWrapperHeight"><div class="menuWidth20"><div class="menuCol"><div class="menuItemHead">Popular</div><div class="menuListItems"><div class="menuInnerCol"></div></div><div class="menuListItems"><div class="menuInnerCol"><a href="/home/recentlyadded"><div class="linkButton headerMenuItems">New Releases</div></a></div></div><div class="menuItemHead">Main Links</div><div class="menuListItems"><a href="/aboutus"><div class="linkButton headerMenuItems">About Us</div></a></div><div class="menuListItems"><a href="https://staging.iptvsolutionsgroup.com/" target="_blank"><div class="linkButton headerMenuItems">Official Website</div></a></div><div class="menuListItems"><a href="/tv"><div class="linkButton headerMenuItems">Link TV App</div></a></div></div></div><div class="menuWidth20 menuBGcolor menuWidth40"><div class="menuCol"><div class="menuItemHead">Categories</div><div class="menuListItems"><div class="menuInnerCol"><div><a href="/home/categorylist?category_id=99996&amp;category_name=Latest%20News"><div class="linkButton headerMenuItems">Latest News</div></a></div><div><a href="/home/categorylist?category_id=99994&amp;category_name=New%20Releases"><div class="linkButton headerMenuItems">New Releases</div></a></div><div><a href="/home/categorylist?category_id=99993&amp;category_name=Watch%20for%20Free"><div class="linkButton headerMenuItems">Watch for Free</div></a></div><div><a href="/home/categorylist?category_id=550&amp;category_name=Latest%20Videos"><div class="linkButton headerMenuItems">Latest Videos</div></a></div><div><a href="/home/categorylist?category_id=551&amp;category_name=Trending%20Videos"><div class="linkButton headerMenuItems">Trending Videos</div></a></div><div><a href="/home/categorylist?category_id=554&amp;category_name=Games"><div class="linkButton headerMenuItems">Games</div></a></div></div></div></div></div></div></div></div></div><img src="/static/media/logo.03eaee53.png" width="100" style="cursor: pointer; width: 30%; padding-left: 18px;"></div></div><section class="searchContainer searchBar" style="border: none;"></section><div class="headerButton"><div class="loginButtonContainer"><ul><li class="header__btn__Mhide"><a class=""><button class="button buttonSecondary buttonBlock" tabindex="-1"><div class="buttonBg rounderbutton"></div><div class="buttonContent">Register</div></button></a></li><li class="header__btn__Dhide"><a class=""><button class="button buttonSecondary buttonBlock" tabindex="-1"><div class="buttonBg rounderbutton"></div><div class="buttonContent">Sign In</div></button></a></li><li class="header__btn__Mhide"><a class="headerSignInButton" style="cursor: pointer;">Sign In</a></li></ul></div></div></div></header><div class="closeMenuWrapper"><div><div class="menuCloseJS closeMenuWrapper"><div class="privacyTermsFlex privacyTermsColor"><div class="privacyTermsWidth"><h1 class="privacyTermsHeading">Terms of Use</h1><div class="privacyTermsWrapper"><div class="privacyTermsContent"><p>This document is an electronic record in terms of the information technology act, 2000 and rules there under as applicable and various other statutes. This electronic record is generated by a computer system and does not require any physical or digital signatures.</p><p>This is a legal and binding agreement between you, the user ("user" or "you") of the services, as defined below, and ISG TV stating the terms that govern your use of the site (as defined below) and by accepting these terms of use in any manner or accessing this website, you consent, agree and undertake to abide, be bound by and adhere to the terms of use and the privacy policy accessible and any other terms which govern the site (together referred to as "terms of use" or "terms" or "terms and conditions") and if you do not agree to these terms of use, you are not entitled to avail of / use the services and any use thereafter shall be unauthorized.</p><h5>Description of service and acceptance of terms of use</h5><p>ISG TV provides an online website <a href="https://maxbet.tv/" target="_blank" style="color: blue;"> ‘https://maxbet.tv/’ </a></p><h5>1. Introduction; Your Agreement to these Terms of Service</h5><p>PLEASE READ THESE TERMS OF SERVICE CAREFULLY. THIS IS A BINDING CONTRACT. Welcome to the services operated by ISG TV, Inc. (collectively with its affiliates, “ISG TV” or “We”) consisting of the website available at https://www.maxbettv.com, and its network of websites, smart tv and smart phone software applications, or any other products or services offered by ISG TV (the “ISG TV Services”). Other services offered by ISG TV may be subject to separate terms.</p><p>When using the ISG TV Services, you will be subject to ISG TV’s Community Guidelines and additional guidelines or rules that are posted on the ISG TV Services, made available to you, or disclosed to you in connection with specific services and features. ISG TV may also offer certain paid services, which are subject to the ISG TV Terms of Sale as well as any additional terms or conditions that are disclosed to you in connection with such services. All such terms and guidelines (the “Guidelines”) are incorporated into these Terms of Service by reference.</p><p>The Terms of Service apply whether you are a user that registers an account with the ISG TV Services or an unregistered user. You agree that by clicking “Sign Up” or otherwise registering, downloading, accessing, or using the ISG TV Services, you are entering into a legally binding agreement between you and ISG TV regarding your use of the ISG TV Services. You acknowledge that you have read, understood, and agree to be bound by these Terms of Service. If you do not agree to these Terms of Service, do not access or otherwise use any of the ISG TV Services.</p><p>When using ISG TV or opening an account with ISG TV on behalf of a company, entity, or organization (collectively, “Subscribing Organization”), you represent and warrant that you: (i) are an authorized representative of that Subscribing Organization with the authority to bind that organization to these Terms of Service and grant the licenses set forth herein; and (ii) agree to these Terms of Service on behalf of such Subscribing Organization.</p><h5>2. Use of ISG TV by Minors and Blocked Persons</h5><p>The ISG TV Services are not available to persons under the age of 18.</p><p>The ISG TV Services are also not available to any users previously removed from the ISG TV Services by ISG TV or to any persons barred from receiving them under the laws of the United States (such as its export and re-export restrictions and regulations) or applicable laws in any other jurisdiction.</p><p>BY DOWNLOADING, INSTALLING, OR OTHERWISE USING THE ISG TV SERVICES, YOU REPRESENT THAT YOU ARE AT LEAST 18 YEARS OF AGE, AND THAT YOU HAVE NOT BEEN PREVIOUSLY REMOVED FROM AND ARE NOT PROHIBITED FROM RECEIVING THE ISG TV SERVICES.</p><h5>3. Privacy Notice</h5><p>Your privacy is important to ISG TV. Please see our Privacy Notice for information relating to how we collect, use, and disclose your personal information.</p><h5>4. Account</h5><p>a. Account and Password</p><p>In order to open an account, you will be asked to provide us with certain information such as an account name and password.</p><p>You are solely responsible for maintaining the confidentiality of your account, your password and for restricting access to your computer. If you permit others to use your account credentials, you agree to these Terms of Service on behalf of all other persons who use the Services under your account or password, and you are responsible for all activities that occur under your account or password. Please make sure the information you provide to ISG TV upon registration and at all other times is true, accurate, current, and complete to the best of your knowledge.</p><p>Unless expressly permitted in writing by ISG TV, you may not sell, rent, lease, share, or provide access to your account to anyone else, including without limitation, charging anyone for access to administrative rights on your account. ISG TV reserves all available legal rights and remedies to prevent unauthorized use of the ISG TV Services, including, but not limited to, technological barriers, IP mapping, and, in serious cases, directly contacting your Internet Service Provider (ISP) regarding such unauthorized use.</p><p>b. Third-Party Accounts</p><p>ISG TV may permit you to register for and log on to the ISG TV Services via certain third-party services. The third party’s collection, use, and disclosure of your information will be subject to that third-party service’s privacy notice. Further information about how ISG TV collects, uses, and discloses your personal information when you link your ISG TV account with your account on any third-party service can be found in our Privacy Notice.</p><h5>5. Use of Devices and Services</h5><p>Access to the ISG TV Services may require the use of your personal computer or mobile device, as well as communications with or use of space on such devices. You are responsible for any Internet connection or mobile fees and charges that you incur when accessing the ISG TV Services.</p><h5>6. Modification of these Terms of Service</h5><p>ISG TV may amend any of the terms of these Terms of Service by posting the amended terms. Your continued use of the ISG TV Services after the effective date of the revised Terms of Service constitutes your acceptance of the terms.</p><p>For residents of the Republic of Korea, ISG TV will provide reasonable prior notice regarding any material amendments to its Terms of Service. All amendments shall become effective no sooner than 30 calendar days after posting; provided that any amendment regarding newly available features of the Service, features of the Service that are beneficial to the user, or changes made for legal reasons may become effective immediately.</p><h5>7. License</h5><p>The ISG TV Services are owned and operated by ISG TV. Unless otherwise indicated, all content, information, and other materials on the ISG TV Services (excluding User Content, set out in Section 8 below), including, without limitation, ISG TV’s trademarks and logos, the visual interfaces, graphics, design, compilation, information, software, computer code (including source code or object code), services, text, pictures, information, data, sound files, other files, and the selection and arrangement thereof (collectively, the “Materials”) are protected by relevant intellectual property and proprietary rights and laws. All Materials are the property of ISG TV or its subsidiaries or affiliated companies and/or third-party licensors. Unless otherwise expressly stated in writing by ISG TV, by agreeing to these Terms of Service you are granted a limited, non-sublicensable license (i.e., a personal and limited right) to access and use the ISG TV Services for your personal use or internal business use only.</p><p>ISG TV reserves all rights not expressly granted in these Terms of Service. This license is subject to these Terms of Service and does not permit you to engage in any of the following: (a) resale or commercial use of the ISG TV Services or the Materials; (b) distribution, public performance or public display of any Materials; (c) modifying or otherwise making any derivative uses of the ISG TV Services or the Materials, or any portion of them; (d) use of any data mining, robots, or similar data gathering or extraction methods; (e) downloading (except page caching) of any portion of the ISG TV Services, the Materials, or any information contained in them, except as expressly permitted on the ISG TV Services; or (f) any use of the ISG TV Services or the Materials except for their intended purposes. Any use of the ISG TV Services or the Materials except as specifically authorized in these Terms of Service, without the prior written permission of ISG TV, is strictly prohibited and may violate intellectual property rights or other laws. Unless explicitly stated in these Terms of Service, nothing in them shall be interpreted as conferring any license to intellectual property rights, whether by estoppel, implication, or other legal principles. ISG TV can terminate this license as set out in Section 14.</p><h5>8. User Content</h5><p>ISG TV allows you to distribute streaming live and pre-recorded audio-visual works; to use services, such as chat, bulletin boards, forum postings, interactive services; and to participate in other activities in which you may create, post, transmit, perform, or store content, messages, text, sound, images, applications, code, or other data or materials on the ISG TV Services (“User Content”).</p><p>a. License to ISG TV</p><p>(i) Unless otherwise agreed to in a written agreement between you and ISG TV that was signed by an authorized representative of ISG TV, if you submit, transmit, display, perform, post, or store User Content using the ISG TV Services, you grant ISG TV and its sub-licensees, to the furthest extent and for the maximum duration permitted by applicable law (including in perpetuity if permitted under applicable law), an unrestricted, worldwide, irrevocable, fully sub-licenseable, nonexclusive, and royalty-free right to: (a) use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, perform, and display such User Content (including without limitation for promoting and redistributing part or all of the ISG TV Services (and derivative works thereof) in any form, format, media, or media channels now known or later developed or discovered; and (b) use the name, identity, likeness, and voice (or other biographical information) that you submit in connection with such User Content. Should such User Content contain the name, identity, likeness, and voice (or other biographical information) of third parties, you represent and warrant that you have obtained the appropriate consents and/or licenses for your use of such features and that ISG TV and its sub-licensees are allowed to use them to the extent indicated in these Terms of Service.</p><p>(ii) With respect to streaming live and pre-recorded audio-visual works, the rights granted by you hereunder terminate once you delete such User Content from the ISG TV Services, or generally by closing your account, except:(a) to the extent you shared it with others as part of the ISG TV Services and others copied or stored portions of the User Content (e.g., made a Clip); (b) ISG TV used it for promotional purposes; and (c) for the reasonable time it takes to remove from backup and other systems.</p> <p>b. User Content Representations and Warranties</p><p>You are solely responsible for your User Content and the consequences of posting or publishing it. You represent and warrant that: (1) you are the creator or own or control all right in and to the User Content or otherwise have sufficient rights and authority to grant the rights granted herein; (2) your User Content does not and will not: (a) infringe, violate, or misappropriate any third-party right, including any copyright, trademark, patent, trade secret, moral right, privacy right, right of publicity, or any other intellectual property or proprietary right, or (b) defame any other person; (3) your User Content does not contain any viruses, adware, spyware, worms, or other harmful or malicious code; and (4) unless you have received prior written authorization, your User Content specifically does not contain any pre-release or non-public content or any confidential information of ISG TV or third parties. ISG TV reserves all rights and remedies against any users who breach these representations and warranties.</p><p>c. Content is Uploaded at Your Own Risk</p><p>ISG TV uses reasonable security measures in order to attempt to protect User Content against unauthorized copying and distribution. However, ISG TV does not guarantee that any unauthorized copying, use, or distribution of User Content by third parties will not take place. To the furthest extent permitted by applicable law, you hereby agree that ISG TV shall not be liable for any unauthorized copying, use, or distribution of User Content by third parties and release and forever waive any claims you may have against ISG TV for any such unauthorized copying or usage of the User Content, under any theory. THE SECURITY MEASURES TO PROTECT USER CONTENT USED BY ISG TV HEREIN ARE PROVIDED AND USED “AS-IS” AND WITH NO WARRANTIES, GUARANTEES, CONDITIONS, ASSURANCES, OR OTHER TERMS THAT SUCH SECURITY MEASURES WILL WITHSTAND ATTEMPTS TO EVADE SECURITY MECHANISMS OR THAT THERE WILL BE NO CRACKS, DISABLEMENTS, OR OTHER CIRCUMVENTION OF SUCH SECURITY MEASURES.</p><p>d. Promotions</p><p>Users may promote, administer, or conduct a promotion (e.g., a contest or sweepstakes) on, through, or utilizing the ISG TV Services (a “Promotion”). If you choose to promote, administer, or conduct a Promotion, you must adhere to the following rules: (1) You may carry out Promotions to the extent permitted by applicable law and you are solely responsible for ensuring that any Promotions comply with any and all applicable laws, obligations, and restrictions; (2) You will be classified as the promoter of your Promotion in the applicable jurisdiction(s) and you will be solely responsible for all aspects of and expenses related to your Promotion, including without limitation the execution, administration, and operation of the Promotion; drafting and posting any official rules; selecting winners; issuing prizes; and obtaining all necessary third-party permissions and approvals, including without limitation filing any and all necessary registrations and bonds. ISG TV has the right to remove your Promotion from the ISG TV Services if ISG TV reasonably believes that your Promotion does not comply with the Terms of Service or applicable law; (3) ISG TV is not responsible for and does not endorse or support any such Promotions. You may not indicate that ISG TV is a sponsor or co-sponsor of the Promotion; and (4) You will display or read out the following disclaimer when promoting, administering, or conducting a Promotion: “This is a promotion by [Your Name]. ISG TV does not sponsor or endorse this promotion and is not responsible for it.”.</p><p>e. Endorsements/Testimonials</p><p>You agree that your User Content will comply with the FTC’s Guidelines Concerning the Use of Testimonials and Endorsements in Advertising , the FTC’s Disclosures Guide, the FTC’s Native Advertising Guidelines, and any other guidelines issued by the FTC from time to time (the “FTC Guidelines”), as well as any other advertising guidelines required under applicable law. For example, if you have been paid or provided with free products in exchange for discussing or promoting a product or service through the ISG TV Services, or if you are an employee of a company and you decide to discuss or promote that company’s products or services through the ISG TV Services, you agree to comply with the FTC Guidelines’ requirements for disclosing such relationships. You, and not ISG TV, are solely responsible for any endorsements or testimonials you make regarding any product or service through the ISG TV Services.</p><h5>9. Prohibited Conduct</h5><p>YOU AGREE NOT TO violate any law, contract, intellectual property, or other third-party right; not to commit a tort, and that you are solely responsible for your conduct while on the ISG TV Services.</p><p>You agree that you will comply with these Terms of Service and ISG TV’s Community Guidelines and will not:</p><p>i. create, upload, transmit, distribute, or store any content that is inaccurate, unlawful, infringing, defamatory, obscene, pornographic, invasive of privacy or publicity rights, harassing, threatening, abusive, inflammatory, or otherwise objectionable;</p><p>ii. impersonate any person or entity; falsely claim an affiliation with any person or entity; access the ISG TV Services accounts of others without permission; forge another person’s digital signature; misrepresent the source, identity, or content of information transmitted via the ISG TV Services; or perform any other similar fraudulent activity;</p><p>iii. send junk mail or spam to users of the ISG TV Services, including without limitation unsolicited advertising, promotional materials, or other solicitation material; bulk mailing of commercial advertising, chain mail, informational announcements, charity requests, petitions for signatures, or any of the preceding things related to promotional giveaways (such as raffles and contests); and other similar activities;</p><p>iv. harvest or collect email addresses or other contact information of other users from the ISG TV Services;</p><p>v. defame, harass, abuse, threaten, or defraud users of the ISG TV Services, or collect or attempt to collect, personal information about users or third parties without their consent;</p><p>vi. delete, remove, circumvent, disable, damage, or otherwise interfere with (a) security-related features of the ISG TV Services or User Content, (b) features that prevent or restrict use or copying of any content accessible through the ISG TV Services, (c) features that enforce limitations on the use of the ISG TV Services or User Content, or (d) the copyright or other proprietary rights notices on the ISG TV Services or User Content;</p><p>vii. reverse engineer, decompile, disassemble, or otherwise attempt to discover the source code of the ISG TV Services or any part thereof, except and only to the extent that this activity is expressly permitted by the law of your jurisdiction of residence;</p><p>viii. modify, adapt, translate, or create derivative works based upon the ISG TV Services or any part thereof, except and only to the extent that such activity is expressly permitted by applicable law notwithstanding this limitation;</p><p>ix. interfere with or damage the operation of the ISG TV Services or any user’s enjoyment of them, by any means, including uploading or otherwise disseminating viruses, adware, spyware, worms, or other malicious code;</p><p>x. relay email from a third party’s mail servers without the permission of that third party;</p><p>xi. access any website, server, software application, or other computer resource owned, used, and/or licensed by ISG TV, including but not limited to the ISG TV Services, by means of any robot, spider, scraper, crawler, or other automated means for any purpose, or bypass any measures ISG TV may use to prevent or restrict access to any website, server, software application, or other computer resource owned, used, and/or licensed by ISG TV, including but not limited to the ISG TV Services;</p><p>xii. manipulate identifiers in order to disguise the origin of any User Content transmitted through the ISG TV Services;</p><p>xiii. interfere with or disrupt the ISG TV Services or servers or networks connected to the ISG TV Services, or disobey any requirements, procedures, policies, or regulations of networks connected to the ISG TV Services; use the ISG TV Services in any manner that could interfere with, disrupt, negatively affect, or inhibit other users from fully enjoying the ISG TV Services, or that could damage, disable, overburden, or impair the functioning of the ISG TV Services in any manner;</p><p>xiv. use or attempt to use another user’s account without authorization from that user and ISG TV;</p><p>xv. attempt to circumvent any content filtering techniques we employ, or attempt to access any service or area of the ISG TV Services that you are not authorized to access;</p><p>xvi. attempt to indicate in any manner, without our prior written permission, that you have a relationship with us or that we have endorsed you or any products or services for any purpose; and</p><p>xvii. use the ISG TV Services for any illegal purpose, or in violation of any local, state, national, or international law or regulation, including without limitation laws governing intellectual property and other proprietary rights, data protection, and privacy.</p><p>To the extent permitted by applicable law, ISG TV takes no responsibility and assumes no liability for any User Content or for any loss or damage resulting therefrom, nor is ISG TV liable for any mistakes, defamation, slander, libel, omissions, falsehoods, obscenity, pornography, or profanity you may encounter when using the ISG TV Services. Your use of the ISG TV Services is at your own risk. In addition, these rules do not create any private right of action on the part of any third party or any reasonable expectation that the ISG TV Services will not contain any content that is prohibited by such rules.</p><p>ISG TV is not liable for any statements or representations included in User Content. ISG TV does not endorse any User Content, opinion, recommendation, or advice expressed therein, and ISG TV expressly disclaims all liability in connection with User Content. To the fullest extent permitted by applicable law, ISG TV reserves the right to remove, screen, or edit any User Content posted or stored on the ISG TV Services at any time and without notice, including where such User Content violates these Terms of Service or applicable law, and you are solely responsible for creating backup copies of and replacing any User Content you post or store on the ISG TV Services at your sole cost and expense. Any use of the ISG TV Services in violation of the foregoing violates these Terms of Service and may result in, among other things, termination or suspension of your rights to use the ISG TV Services.</p><p>For Residents of the Republic of Korea, except in the case where ISG TV reasonably considers that giving notice is legally prohibited (for instance, when providing notice would either (i) violate applicable laws, regulations, or orders from regulatory authorities or (ii) compromise an ongoing investigation conducted by a regulatory authority) or that any notice may cause harm to you, third parties, ISG TV, and/or its affiliates (for instance, when providing notice harms the security of the ISG TV Services), ISG TV will without delay notify you of the reason for taking the relevant step.</p><h5>10. Respecting Copyright</h5><p>ISG TV respects the intellectual property of others and follows the requirements set forth in the Digital Millennium Copyright Act (“DMCA”) and other applicable laws. If you are the copyright owner or agent thereof and believe that content posted on the ISG TV Services infringes upon your copyright, please submit a notice following our DMCA Guidelines, which include further information about our policies, what to include in your notice, and where to submit your notice.</p><h5>11. Trademarks</h5><p>ISG TV, the ISG TV logos, and any other product or service name, logo, or slogan used by ISG TV, and the look and feel of the ISG TV Services, including all page headers, custom graphics, button icons, and scripts, are trademarks or trade dress of ISG TV, and may not be used in whole or in part in connection with any product or service that is not ISG TV’s, in any manner that is likely to cause confusion among customers, or in any manner that disparages or discredits ISG TV, without our prior written permission. Any use of these trademarks must be in accordance with the ISG TV Trademark Guidelines.</p><p>All other trademarks referenced in the ISG TV Services are the property of their respective owners. Reference on the ISG TV Services to any products, services, processes, or other information by trade name, trademark, manufacturer, supplier, or otherwise does not constitute or imply endorsement, sponsorship, or recommendation thereof by us or any other affiliation.</p><h5>12. Third-Party Content</h5><p>In addition to the User Content, ISG TV may provide other third-party content on the ISG TV Services (collectively, the “Third-Party Content”). ISG TV does not control or endorse any Third-Party Content and makes no representation or warranties of any kind regarding the Third-Party Content, including without limitation regarding its accuracy or completeness. Please be aware that we do not create Third-Party Content, update, or monitor it. Therefore, we are not responsible for any Third-Party Content on the ISG TV Services.</p><p>You are responsible for deciding if you want to access or use third-party websites or applications that link from the ISG TV Services (the “Reference Sites”). ISG TV does not control or endorse any such Reference Sites, or the information, materials, products, or services contained on or accessible through Reference Sites, and makes no representations or warranties of any kind regarding the Reference Sites. In addition, your correspondence or business dealings with, or participation in promotions of, advertisers found on or through the ISG TV Services are solely between you and such advertiser. Access and use of Reference Sites, including the information, materials, products, and services on or available through Reference Sites is solely at your own risk.</p><h5>13. Idea Submission</h5><p>By submitting ideas, suggestions, documents, and/or proposals (the “Submissions”) to ISG TV or its employees, you acknowledge and agree that ISG TV shall be entitled to use or disclose such Submissions for any purpose in any way without providing compensation or credit to you.</p><h5>14. Termination</h5><p>To the fullest extent permitted by applicable law, ISG TV reserves the right, without notice and in our sole discretion, to terminate your license to use the ISG TV Services (including to post User Content) and to block or prevent your future access to and use of the ISG TV Services, including where we reasonably consider that: (a) your use of the ISG TV Services violates these Terms of Service or applicable law; (b) you fraudulently use or misuse the ISG TV Services; or (c) we are unable to continue providing the ISG TV Services to you due to technical or legitimate business reasons. Our right to terminate your license includes the ability to terminate or to suspend your access to any purchased products. To the fullest extent permitted by applicable law, your only remedy with respect to any dissatisfaction with: (i) the ISG TV Services, (ii) any term of these Terms of Service, (iii) any policy or practice of ISG TV in operating the ISG TV Services, or (iv) any content or information transmitted through the ISG TV Services, is to terminate your account and to discontinue use of any and all parts of the ISG TV Services.</p><p>For residents of the Republic of Korea, except in the case where ISG TV reasonably considers that giving notice is legally prohibited (for instance, when providing notice would either (i) violate applicable laws, regulations, or orders from regulatory authorities or (ii) compromise an ongoing investigation conducted by a regulatory authority) or that any notice may cause harm to you, third parties, ISG TV, and/or its affiliates (for instance, when providing notice harms the security of the ISG TV Services), ISG TV will without delay notify you of the reason for taking the relevant step.</p><h5>15. Fees and Payment.</h5><p>License Fees. In consideration of the licenses granted and other undertakings by Licensor hereunder, Licensee shall pay Licensor License Fees equal to fifty percent (50%) of Net Revenues generated by the Licensed Content. For the avoidance of doubt, Licensed Content Licensee Sites will be monetized via the placement of video advertisements before and within the Licensed Content. These advertisements are purchased by advertisers using a metric known as the cost per thousand impressions (“CPM”).</p><p>Payment. Licensee shall pay the License Fees monthly, sixty (60) days in arrears, after actual receipt of the Gross Revenues.</p><p>Taxes. All License Fees are exclusive of sales, use, value added, and similar taxes, which are the responsibility of Licensor.</p><h5>16. Disputes</h5><p>a. Indemnification</p><p>To the fullest extent permitted by applicable law, you agree to indemnify, defend, and hold harmless ISG TV, its affiliated companies, and each of our respective contractors, employees, officers, directors, agents, third-party suppliers, licensors, and partners (individually and collectively, the “ISG TV Parties”) from any claims, losses, damages, demands, expenses, costs, and liabilities, including legal fees and expenses, arising out of or related to your access, use, or misuse of the ISG TV Services, any User Content you post, store, or otherwise transmit in or through the ISG TV Services, your violation of the rights of any third party, any violation by you of these Terms of Service, or any breach of the representations, warranties, and covenants made by you herein. You agree to promptly notify the ISG TV Parties of any third-party claim, and ISG TV reserves the right, at your expense, to assume the exclusive defense and control of any matter for which you are required to indemnify ISG TV, and you agree to cooperate with ISG TV’s defense of these claims. ISG TV will use reasonable efforts to notify you of any such claim, action, or proceeding upon becoming aware of it.</p><p>b. Disclaimers; No Warranties</p><p>TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW: (A) THE ISG TV SERVICES AND THE CONTENT AND MATERIALS CONTAINED THEREIN ARE PROVIDED ON AN “AS IS” BASIS WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, EXCEPT AS EXPRESSLY PROVIDED TO THE CONTRARY IN WRITING BY ISG TV; (B) THE ISG TV PARTIES DISCLAIM ALL OTHER WARRANTIES, STATUTORY, EXPRESS, OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT AS TO THE ISG TV SERVICES, INCLUDING ANY INFORMATION, CONTENT, OR MATERIALS CONTAINED THEREIN; (C) ISG TV DOES NOT REPRESENT OR WARRANT THAT THE CONTENT OR MATERIALS ON THE ISG TV SERVICES ARE ACCURATE, COMPLETE, RELIABLE, CURRENT, OR ERROR-FREE; (D) ISG TV IS NOT RESPONSIBLE FOR TYPOGRAPHICAL ERRORS OR OMISSIONS RELATING TO TEXT OR PHOTOGRAPHY; AND (E) WHILE ISG TV ATTEMPTS TO MAKE YOUR ACCESS AND USE OF THE ISG TV SERVICES SAFE, ISG TV CANNOT AND DOES NOT REPRESENT OR WARRANT THAT THE ISG TV SERVICES OR OUR SERVER(S) ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS, AND THEREFORE, YOU SHOULD USE INDUSTRY-RECOGNIZED SOFTWARE TO DETECT AND DISINFECT VIRUSES FROM ANY DOWNLOAD. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM ISG TV OR THROUGH THE ISG TV SERVICES WILL CREATE ANY WARRANTY NOT EXPRESSLY STATED HEREIN.</p><p>c. Limitation of Liability and Damages</p><p>i. Limitation of Liability</p><p>TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW: (A) IN NO EVENT SHALL ISG TV OR THE ISG TV PARTIES BE LIABLE FOR ANY DIRECT, SPECIAL, INDIRECT, OR CONSEQUENTIAL DAMAGES, OR ANY OTHER DAMAGES OF ANY KIND, INCLUDING BUT NOT LIMITED TO LOSS OF USE, LOSS OF PROFITS, OR LOSS OF DATA, WHETHER IN AN ACTION IN CONTRACT, TORT (INCLUDING BUT NOT LIMITED TO NEGLIGENCE), OR OTHERWISE, ARISING OUT OF OR IN ANY WAY CONNECTED WITH THE USE OF OR INABILITY TO USE THE ISG TV SERVICES, THE CONTENT OR THE MATERIALS, INCLUDING WITHOUT LIMITATION ANY DAMAGES CAUSED BY OR RESULTING FROM RELIANCE ON ANY INFORMATION OBTAINED FROM ISG TV, OR THAT RESULT FROM MISTAKES, OMISSIONS, INTERRUPTIONS, DELETION OF FILES OR EMAIL, ERRORS, DEFECTS, VIRUSES, DELAYS IN OPERATION OR TRANSMISSION, OR ANY FAILURE OF PERFORMANCE, WHETHER OR NOT RESULTING FROM ACTS OF GOD, COMMUNICATIONS FAILURE, THEFT, DESTRUCTION, OR UNAUTHORIZED ACCESS TO ISG TV’S RECORDS, PROGRAMS, OR SERVICES; AND (B) IN NO EVENT SHALL THE AGGREGATE LIABILITY OF ISG TV, WHETHER IN CONTRACT, WARRANTY, TORT (INCLUDING NEGLIGENCE, WHETHER ACTIVE, PASSIVE, OR IMPUTED), PRODUCT LIABILITY, STRICT LIABILITY, OR OTHER THEORY, ARISING OUT OF OR RELATING TO THE USE OF OR INABILITY TO USE THE ISG TV SERVICES EXCEED THE AMOUNT PAID BY YOU, IF ANY, FOR ACCESSING THE ISG TV SERVICES DURING THE TWELVE (12) MONTHS IMMEDIATELY PRECEDING THE DATE OF THE CLAIM OR ONE HUNDRED DOLLARS, WHICHEVER IS GREATER. TO THE EXTENT THAT APPLICABLE LAW PROHIBITS LIMITATION OF SUCH LIABILITY, ISG TV SHALL LIMIT ITS LIABILITY TO THE FULL EXTENT ALLOWED BY APPLICABLE LAW.</p><p>ii. Reference Sites</p><p>THESE LIMITATIONS OF LIABILITY ALSO APPLY WITH RESPECT TO DAMAGES INCURRED BY YOU BY REASON OF ANY PRODUCTS OR SERVICES SOLD OR PROVIDED ON ANY REFERENCE SITES OR OTHERWISE BY THIRD PARTIES OTHER THAN ISG TV AND RECEIVED THROUGH OR ADVERTISED ON THE ISG TV SERVICES OR RECEIVED THROUGH ANY REFERENCE SITES.</p><p>iii. Basis of the Bargain</p><p>YOU ACKNOWLEDGE AND AGREE THAT ISG TV HAS OFFERED THE ISG TV SERVICES, USER CONTENT, MATERIALS, AND OTHER CONTENT AND INFORMATION, SET ITS PRICES, AND ENTERED INTO THESE TERMS OF SERVICE IN RELIANCE UPON THE WARRANTY DISCLAIMERS AND LIMITATIONS OF LIABILITY SET FORTH HEREIN, THAT THE WARRANTY DISCLAIMERS AND LIMITATIONS OF LIABILITY SET FORTH HEREIN REFLECT A REASONABLE AND FAIR ALLOCATION OF RISK BETWEEN YOU AND ISG TV, AND THAT THE WARRANTY DISCLAIMERS AND LIMITATIONS OF LIABILITY SET FORTH HEREIN FORM AN ESSENTIAL BASIS OF THE BARGAIN BETWEEN YOU AND ISG TV. ISG TV WOULD NOT BE ABLE TO PROVIDE THE ISG TV SERVICES TO YOU ON AN ECONOMICALLY REASONABLE BASIS WITHOUT THESE LIMITATIONS.</p><p>d. Applicable Law and Venue</p><p>(i) To the fullest extent permitted by applicable law, you and ISG TV agree that if you are a Subscribing Organization or a consumer resident of a jurisdiction other than those in (ii) below, the following governing law and arbitration provision applies:</p><p>PLEASE READ THE FOLLOWING CAREFULLY BECAUSE IT REQUIRES YOU TO ARBITRATE DISPUTES WITH ISG TV AND LIMITS THE MANNER IN WHICH YOU CAN SEEK RELIEF FROM ISG TV.</p><p>You and ISG TV agree to arbitrate any dispute arising from these Terms of Service or your use of the ISG TV Services, except that you and ISG TV are not required to arbitrate any dispute in which either party seeks equitable and other relief for the alleged unlawful use of copyrights, trademarks, trade names, logos, trade secrets, or patents. ARBITRATION PREVENTS YOU FROM SUING IN COURT OR FROM HAVING A JURY TRIAL. You and ISG TV agree that you will notify each other in writing of any dispute within thirty (30) days of when it arises. Notice to ISG TV shall be sent to: ISG TV, Inc., 6565 Spencer St. Las Vegas, NV 89119. You and ISG TV further agree: to attempt informal resolution prior to any demand for arbitration; that any arbitration will occur in Clark County, Nevada; that arbitration will be conducted confidentially by a single arbitrator in accordance with the rules of JAMS; and that the state or federal courts in Clark County, California have exclusive jurisdiction over any appeals of an arbitration award and over any suit between the parties not subject to arbitration. Other than class procedures and remedies discussed below, the arbitrator has the authority to grant any remedy that would otherwise be available in court. Any dispute between the parties will be governed by this Agreement and the laws of the State of Nevada and applicable United States law, without giving effect to any conflict of laws principles that may provide for the application of the law of another jurisdiction. Whether the dispute is heard in arbitration or in court, you and ISG TV will not commence against the other a class action, class arbitration, or other representative action or proceeding.</p><p>(ii) If you are a resident in any jurisdiction in which the provision in the section above is found to be unenforceable, then any disputes, claims, or causes of action arising out of or in connection with these Terms of Service will be governed by and construed under the laws of your jurisdiction of residence and shall be resolved by competent civil courts within your jurisdiction of residence.</p><p>e. Claims</p><p>YOU AND ISG TV AGREE THAT ANY CAUSE OF ACTION ARISING OUT OF OR RELATED TO THE ISG TV SERVICES MUST COMMENCE WITHIN ONE (1) YEAR AFTER THE CAUSE OF ACTION ACCRUES. OTHERWISE, SUCH CAUSE OF ACTION IS PERMANENTLY BARRED.</p><h5>17. Miscellaneous</h5><p>a. Waiver</p><p>If we fail to exercise or enforce any right or provision of these Terms of Service, it will not constitute a waiver of such right or provision. Any waiver of any provision of these Terms of Service will be effective only if in writing and signed by the relevant party.</p><p>b. Severability</p><p>If any provision of these Terms of Service is held to be unlawful, void, or for any reason unenforceable, then that provision will be limited or eliminated from these Terms of Service to the minimum extent necessary and will not affect the validity and enforceability of any remaining provisions.</p><p>c. Assignment</p><p>These Terms of Service, and any rights and licenses granted hereunder, may not be transferred or assigned by you, but may be assigned by ISG TV without restriction. Any assignment attempted to be made in violation of this Terms of Service shall be void.</p><p>d. Survival</p><p>Upon termination of these Terms of Service, any provision which, by its nature or express terms should survive, will survive such termination or expiration, including, but not limited to, Sections 7, 8, 11, 12, and 15-17.</p><p>e. Entire Agreement</p><p>The Terms of Service, which incorporate the Terms of Sale and the Community Guidelines, is the entire agreement between you and ISG TV relating to the subject matter herein and will not be modified except by a writing signed by authorized representatives of both parties, or by a change to these Terms of Service made by ISG TV as set forth in Section 6 above.</p><h5>18. Requests for Information and How to Serve a Subpoena</h5><p>All requests for information or documents related to potential, anticipated, or current legal proceedings, investigations, or disputes must be made using the appropriate level of legal process, and must be properly served on ISG TV via Lewis Roca Rothberger Christie, LLP (Lewis Roca) ISG TV’s registered agent. Please find below the Nevada address for Lewis Roca:</p><p>ISG TV, Inc.</p><p>c/o Lewis Roca Rothberger Christie</p><p>3993 Howard Hughes Parkway Suite 600</p><p>Las Vegas, NV 89169</p><p>Please note that ISG TV does not accept requests for information or documents, or service of process, via e-mail or fax and will not respond to such requests. All requests must include the information you may have that will help us identify the relevant records (particularly, the ISG TV Service at issue, e.g., www.maxbettv.com, and the username at issue, e.g., the ISG TV username: http://www.maxbettv.com/username), the specific information requested, and its relationship to your investigation. Please also note that limiting your request to the relevant records (e.g., a limited time period) will facilitate efficient processing of your request.</p></div></div></div></div></div></div></div><div class="footer"><div class="container"><div class="row footerLogoSocial"><a href="/home"><div class="footerLogo"><img src="/static/media/logo.03eaee53.png" width="65" style="cursor: pointer;"></div></a><div class="_23TJ8"></div><div class="col col-4 col-lg-3 col-xl-1-5 col-xxl-2 socialTray"><div class="socialLinkContainer"><div class="footerSLWrapper"><a href="https://www.facebook.com/MaxBetTV/" rel="noopener" target="_blank" class="linkButton footerFacebook" style="color: rgb(194, 213, 1);"><svg class="svgIcon facebookIcon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20" style="fill: currentcolor;"><path fill="currentColor" fill-rule="evenodd" d="M2 0C.938 0 0 1.063 0 1.97v16.093C0 19.03 1.063 20 2 20h9v-8H8V9h3V7c-.318-2.573 1.26-3.98 4-4 .668.02 1.617.103 2 0v3h-2c-.957-.16-1.2.436-1 1v2h3l-1 3h-2v8h3.938c1.03 0 2.062-.938 2.062-1.938V1.97C20 1.03 18.937 0 17.937 0H2z"></path></svg></a><a href="https://www.instagram.com/maxbettv/?hl=en" rel="noopener" target="_blank" class="linkButton footerInsta" style="color: rgb(194, 213, 1);"><svg class="svgIcon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20" style="fill: currentcolor;"><g fill="currentColor" fill-rule="evenodd"><path d="M10 0C7.284 0 6.944.012 5.877.06 4.813.11 4.087.278 3.45.525c-.658.256-1.216.598-1.772 1.153C1.123 2.234.78 2.792.525 3.45.278 4.086.11 4.812.06 5.877.012 6.944 0 7.284 0 10s.012 3.057.06 4.123c.05 1.065.218 1.79.465 2.428.256.658.598 1.216 1.153 1.77.556.558 1.114.9 1.772 1.155.636.248 1.363.417 2.427.464 1.067.048 1.407.06 4.123.06s3.057-.012 4.123-.06c1.064-.048 1.79-.217 2.428-.465.658-.255 1.216-.597 1.77-1.154.558-.554.9-1.112 1.155-1.77.248-.636.417-1.362.464-2.427.048-1.066.06-1.407.06-4.123s-.012-3.056-.06-4.123c-.048-1.065-.217-1.79-.465-2.427-.255-.658-.597-1.216-1.154-1.772-.554-.555-1.112-.897-1.77-1.153C15.915.278 15.188.11 14.124.06 13.057.012 12.716 0 10 0m0 2c2.606 0 2.914.01 3.943.057.952.044 1.468.202 1.812.336.455.177.78.39 1.123.73.34.34.552.667.73 1.12.133.346.292.862.335 1.814C17.99 7.087 18 7.394 18 10s-.01 2.914-.057 3.943c-.043.952-.202 1.468-.335 1.812-.178.455-.39.78-.73 1.123-.343.34-.668.552-1.123.73-.344.133-.86.292-1.812.335-1.03.047-1.337.057-3.943.057s-2.914-.01-3.943-.057c-.952-.043-1.468-.202-1.813-.335-.454-.178-.78-.39-1.12-.73-.342-.343-.554-.668-.73-1.123-.135-.344-.293-.86-.337-1.812C2.01 12.913 2 12.606 2 10s.01-2.914.057-3.943c.044-.952.202-1.468.336-1.813.177-.454.39-.78.73-1.12.34-.342.667-.554 1.12-.73.346-.135.862-.293 1.814-.337C7.087 2.01 7.394 2 10 2"></path><path d="M10 13c-1.657 0-3-1.343-3-3 0-1.656 1.343-3 3-3s3 1.344 3 3c0 1.657-1.343 3-3 3m0-8c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5m6 0c0 .553-.447 1-1 1-.553 0-1-.447-1-1 0-.553.447-1 1-1 .553 0 1 .447 1 1"></path></g></svg></a><a href="https://in.pinterest.com/0uettaf6f5so56zhsl4f3jdd8r6oiz/_created/" rel="noopener" target="_blank" class="linkButton footerTwitter" style="color: rgb(194, 213, 1);"><svg id="container" viewBox="0 0 310.05 310.05" class="svgIcon" style="fill: currentcolor;"><path id="logo" d="M245.265,31.772C223.923,11.284,194.388,0,162.101,0c-49.32,0-79.654,20.217-96.416,37.176
+
+         c-20.658,20.9-32.504,48.651-32.504,76.139c0,34.513,14.436,61.003,38.611,70.858c1.623,0.665,3.256,1,4.857,1
+
+         c5.1,0,9.141-3.337,10.541-8.69c0.816-3.071,2.707-10.647,3.529-13.936c1.76-6.495,0.338-9.619-3.5-14.142
+
+         c-6.992-8.273-10.248-18.056-10.248-30.788c0-37.818,28.16-78.011,80.352-78.011c41.412,0,67.137,23.537,67.137,61.425
+
+         c0,23.909-5.15,46.051-14.504,62.35c-6.5,11.325-17.93,24.825-35.477,24.825c-7.588,0-14.404-3.117-18.705-8.551
+
+         c-4.063-5.137-5.402-11.773-3.768-18.689c1.846-7.814,4.363-15.965,6.799-23.845c4.443-14.392,8.643-27.985,8.643-38.83
+
+         c0-18.55-11.404-31.014-28.375-31.014c-21.568,0-38.465,21.906-38.465,49.871c0,13.715,3.645,23.973,5.295,27.912
+
+         c-2.717,11.512-18.865,79.953-21.928,92.859c-1.771,7.534-12.44,67.039,5.219,71.784c19.841,5.331,37.576-52.623,39.381-59.172
+
+         c1.463-5.326,6.582-25.465,9.719-37.845c9.578,9.226,25,15.463,40.006,15.463c28.289,0,53.73-12.73,71.637-35.843
+
+         c17.367-22.418,26.932-53.664,26.932-87.978C276.869,77.502,265.349,51.056,245.265,31.772z"></path></svg></a><a href="https://www.linkedin.com/company/maxbettv/" rel="noopener" target="_blank" class="linkButton footerLinkedIn" style="color: rgb(194, 213, 1);"><svg class="svgIcon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 15 15" style="fill: currentcolor;"><path d="M13.89 0H1.11A1.1 1.1 0 0 0 0 1.08v12.84A1.1 1.1 0 0 0 1.11 15h12.78A1.1 1.1 0 0 0 15 13.92V1.08A1.1 1.1 0 0 0 13.89 0zM4 13H2V5h2zm0-9H2V2h2zm9 9h-2.24V9.2c0-.91 0-2.07-1.17-2.07s-1.35 1-1.35 2V13H6V5.19h2.15v1.07A2.33 2.33 0 0 1 10.31 5C12.58 5 13 6.62 13 8.72z"></path></svg></a></div></div></div></div><div class="row footerSeperator"><div class="col col-4 col-lg-3 col-xl-1-5 col-xxl-2 footerLine"></div><div class="col col-4 col-lg-3 col-xl-1-5 col-xxl-2 footerLine"></div></div><div class="row footerMenu" style="line-height: 1.4rem;"><div class="col col-4 col-lg-3 col-xl-1-5 col-xxl-2"><ul class="footerMenuContainer"><li class="footerMenuHead">COMPANY</li><li> <div rel="noopener" target="_self" class="linkButton" style="color: rgb(255, 255, 255);">About Us</div></li><li>Official Website</li></ul></div><div class="col col-4 col-lg-3 col-xl-1-5 col-xxl-2"><ul class="footerMenuContainer"><li class="footerMenuHead">SUPPORT</li><li><div class="linkButton" style="color: rgb(255, 255, 255);">Contact Support</div></li></ul></div><div class="col col-4 col-lg-3 col-xl-1-5 col-xxl-2"><ul class="footerMenuContainer"><li class="footerMenuHead">PARTNERS</li><li><div rel="noopener" target="_self" class="linkButton" style="color: rgb(255, 255, 255);">Advertise with Us</div></li><li><div class="linkButton" style="color: rgb(255, 255, 255);">Partner with Us</div></li></ul></div><div class="col col-4 col-lg-3 col-xl-1-5 col-xxl-2"><ul class="footerMenuContainer"><li class="footerMenuHead">GET THE APPS</li><li><div rel="noopener" target="_self" class="linkButton" style="color: rgb(255, 255, 255);">iOS</div></li><li><div rel="noopener" target="_self" class="linkButton" style="color: rgb(255, 255, 255);">Android</div></li><li><div rel="noopener" target="_self" class="linkButton" style="color: rgb(255, 255, 255);">Roku</div></li><li><div rel="noopener" target="_self" class="linkButton" style="color: rgb(255, 255, 255);">Amazon Fire</div></li><li><div rel="noopener" target="_self" class="linkButton" style="color: rgb(255, 255, 255);">Android TV</div></li><li><div rel="noopener" target="_self" class="linkButton" style="color: rgb(255, 255, 255);">Apple TV</div></li></ul></div><div class="col col-4 col-lg-3 col-xl-1-5 col-xxl-2"><ul class="footerMenuContainer"><li class="footerMenuHead">LEGAL</li><li><div class="linkButton" style="color: rgb(255, 255, 255);">Privacy Policy</div></li><li><div class="linkButton" style="color: rgb(255, 255, 255);">Terms of Use</div></li></ul></div></div></div><div class="footerInfo"><div class="footerApps"><a href="#"><span rel="noopener" target="_blank" class="linkButton"><svg locale="[object Object]" class="svgIcon appStoreApple" preserveAspectRatio="xMidYMid meet" viewBox="0 0 119.66 40" style="fill: rgb(32, 32, 38);"><path d="M110.13477,0H9.53468c-.3667,0-.729,0-1.09473.002-.30615.002-.60986.00781-.91895.0127A13.21476,13.21476,0,0,0,5.5171.19141a6.66509,6.66509,0,0,0-1.90088.627A6.43779,6.43779,0,0,0,1.99757,1.99707,6.25844,6.25844,0,0,0,.81935,3.61816a6.60119,6.60119,0,0,0-.625,1.90332,12.993,12.993,0,0,0-.1792,2.002C.00587,7.83008.00489,8.1377,0,8.44434V31.5586c.00489.3105.00587.6113.01515.9219a12.99232,12.99232,0,0,0,.1792,2.0019,6.58756,6.58756,0,0,0,.625,1.9043A6.20778,6.20778,0,0,0,1.99757,38.001a6.27445,6.27445,0,0,0,1.61865,1.1787,6.70082,6.70082,0,0,0,1.90088.6308,13.45514,13.45514,0,0,0,2.0039.1768c.30909.0068.6128.0107.91895.0107C8.80567,40,9.168,40,9.53468,40H110.13477c.3594,0,.7246,0,1.084-.002.3047,0,.6172-.0039.9219-.0107a13.279,13.279,0,0,0,2-.1768,6.80432,6.80432,0,0,0,1.9082-.6308,6.27742,6.27742,0,0,0,1.6172-1.1787,6.39482,6.39482,0,0,0,1.1816-1.6143,6.60413,6.60413,0,0,0,.6191-1.9043,13.50643,13.50643,0,0,0,.1856-2.0019c.0039-.3106.0039-.6114.0039-.9219.0078-.3633.0078-.7246.0078-1.0938V9.53613c0-.36621,0-.72949-.0078-1.09179,0-.30664,0-.61426-.0039-.9209a13.5071,13.5071,0,0,0-.1856-2.002,6.6177,6.6177,0,0,0-.6191-1.90332,6.46619,6.46619,0,0,0-2.7988-2.7998,6.76754,6.76754,0,0,0-1.9082-.627,13.04394,13.04394,0,0,0-2-.17676c-.3047-.00488-.6172-.01074-.9219-.01269-.3594-.002-.7246-.002-1.084-.002Z" fill="#36373A"></path><path d="M8.44483,39.125c-.30468,0-.602-.0039-.90429-.0107a12.68714,12.68714,0,0,1-1.86914-.1631,5.88381,5.88381,0,0,1-1.65674-.5479,5.40573,5.40573,0,0,1-1.397-1.0166,5.32082,5.32082,0,0,1-1.02051-1.3965,5.72186,5.72186,0,0,1-.543-1.6572,12.41351,12.41351,0,0,1-.1665-1.875c-.00634-.2109-.01464-.9131-.01464-.9131V8.44434S.88185,7.75293.8877,7.5498a12.37039,12.37039,0,0,1,.16553-1.87207,5.7555,5.7555,0,0,1,.54346-1.6621A5.37349,5.37349,0,0,1,2.61183,2.61768,5.56543,5.56543,0,0,1,4.01417,1.59521a5.82309,5.82309,0,0,1,1.65332-.54394A12.58589,12.58589,0,0,1,7.543.88721L8.44532.875H111.21387l.9131.0127a12.38493,12.38493,0,0,1,1.8584.16259,5.93833,5.93833,0,0,1,1.6709.54785,5.59374,5.59374,0,0,1,2.415,2.41993,5.76267,5.76267,0,0,1,.5352,1.64892,12.995,12.995,0,0,1,.1738,1.88721c.0029.2832.0029.5874.0029.89014.0079.375.0079.73193.0079,1.09179V30.4648c0,.3633,0,.7178-.0079,1.0752,0,.3252,0,.6231-.0039.9297a12.73126,12.73126,0,0,1-.1709,1.8535,5.739,5.739,0,0,1-.54,1.67,5.48029,5.48029,0,0,1-1.0156,1.3857,5.4129,5.4129,0,0,1-1.3994,1.0225,5.86168,5.86168,0,0,1-1.668.5498,12.54218,12.54218,0,0,1-1.8692.1631c-.2929.0068-.5996.0107-.8974.0107l-1.084.002Z"></path><g dataname="<Group>"><g dataname="<Group>"><g fill="#fff" dataname="<Group>"><path d="m24.769 20.301a4.9488 4.9488 0 0 1 2.3566-4.1521 5.0657 5.0657 0 0 0-3.9912-2.1577c-1.6792-0.17626-3.3072 1.0048-4.1629 1.0048-0.87227 0-2.1898-0.98733-3.6085-0.95814a5.3153 5.3153 0 0 0-4.4729 2.7279c-1.934 3.3484-0.49141 8.2695 1.3612 10.976 0.9269 1.3254 2.0102 2.8058 3.4276 2.7533 1.3871-0.05753 1.9051-0.88448 3.5794-0.88448 1.6588 0 2.1448 0.88448 3.591 0.8511 1.4884-0.02416 2.4261-1.3312 3.3205-2.6691a10.962 10.962 0 0 0 1.5184-3.0925 4.782 4.782 0 0 1-2.9192-4.3992z" dataname="<Path>"></path><path d="m22.037 12.211a4.8725 4.8725 0 0 0 1.1145-3.4906 4.9575 4.9575 0 0 0-3.2076 1.6596 4.6363 4.6363 0 0 0-1.1437 3.3614 4.099 4.099 0 0 0 3.2368-1.5304z" dataname="<Path>"></path></g></g><g fill="#fff"><path d="m42.302 27.14h-4.7334l-1.1367 3.3564h-2.0049l4.4834-12.418h2.083l4.4834 12.418h-2.0391zm-4.2432-1.5488h3.752l-1.8496-5.4473h-0.05176z"></path><path d="m55.16 25.97c0 2.8135-1.5059 4.6211-3.7783 4.6211a3.0693 3.0693 0 0 1-2.8486-1.584h-0.043v4.4844h-1.8584v-12.049h1.7989v1.5059h0.03418a3.2116 3.2116 0 0 1 2.8828-1.6006c2.2978 1e-5 3.8125 1.8164 3.8125 4.6221zm-1.9102 0c0-1.833-0.94727-3.0381-2.3926-3.0381-1.4199 0-2.375 1.2305-2.375 3.0381 0 1.8242 0.95508 3.0459 2.375 3.0459 1.4453 0 2.3926-1.1963 2.3926-3.0459z"></path><path d="m65.125 25.97c0 2.8135-1.5059 4.6211-3.7783 4.6211a3.0693 3.0693 0 0 1-2.8486-1.584h-0.043v4.4844h-1.8584v-12.049h1.7988v1.5059h0.03418a3.2116 3.2116 0 0 1 2.8828-1.6006c2.2979 0 3.8125 1.8164 3.8125 4.6221zm-1.9102 0c0-1.833-0.94727-3.0381-2.3926-3.0381-1.4199 0-2.375 1.2305-2.375 3.0381 0 1.8242 0.95508 3.0459 2.375 3.0459 1.4453 0 2.3926-1.1963 2.3926-3.0459z"></path><path d="m71.71 27.036c0.1377 1.2314 1.334 2.04 2.9688 2.04 1.5664 0 2.6934-0.80859 2.6934-1.919 0-0.96387-0.67969-1.541-2.2891-1.9365l-1.6094-0.3877c-2.2803-0.55078-3.3389-1.6172-3.3389-3.3477 0-2.1426 1.8672-3.6143 4.5186-3.6143 2.624 0 4.4228 1.4717 4.4834 3.6143h-1.876c-0.1123-1.2393-1.1367-1.9873-2.6338-1.9873s-2.5215 0.75684-2.5215 1.8584c0 0.87793 0.6543 1.3945 2.2549 1.79l1.3682 0.33594c2.5478 0.60254 3.6064 1.626 3.6064 3.4424 0 2.3232-1.8506 3.7783-4.794 3.7783-2.7539 0-4.6133-1.4209-4.7334-3.667z"></path><path d="m83.346 19.3v2.1426h1.7217v1.4717h-1.7217v4.9912c0 0.77539 0.34473 1.1367 1.1016 1.1367a5.8075 5.8075 0 0 0 0.61133-0.043v1.4629a5.1035 5.1035 0 0 1-1.0322 0.08594c-1.833 0-2.5478-0.68848-2.5478-2.4443v-5.1894h-1.3164v-1.4717h1.3164v-2.1426z"></path><path d="m86.065 25.97c0-2.8486 1.6777-4.6387 4.294-4.6387 2.625 0 4.2949 1.79 4.2949 4.6387 0 2.8564-1.6611 4.6387-4.2949 4.6387-2.6329 0-4.294-1.7822-4.294-4.6387zm6.6953 0c0-1.9541-0.89551-3.1074-2.4014-3.1074s-2.4004 1.1621-2.4004 3.1074c0 1.9619 0.89453 3.1064 2.4004 3.1064s2.4013-1.1445 2.4013-3.1064z"></path><path d="m96.186 21.442h1.7725v1.541h0.043a2.1594 2.1594 0 0 1 2.1777-1.6357 2.8662 2.8662 0 0 1 0.63672 0.06934v1.7383a2.5979 2.5979 0 0 0-0.835-0.1123 1.8726 1.8726 0 0 0-1.9365 2.083v5.3701h-1.8584z"></path><path d="m109.38 27.837c-0.25 1.6436-1.8506 2.7715-3.8984 2.7715-2.6338 0-4.2686-1.7646-4.2686-4.5957 0-2.8398 1.6436-4.6816 4.1904-4.6816 2.5049 0 4.0801 1.7207 4.0801 4.4658v0.63672h-6.3945v0.1123a2.358 2.358 0 0 0 2.4356 2.5644 2.0483 2.0483 0 0 0 2.0908-1.2734zm-6.2822-2.7022h4.5264a2.1773 2.1773 0 0 0-2.2207-2.2978 2.292 2.292 0 0 0-2.3057 2.2979z"></path></g></g><g dataname="<Group>"><g fill="#fff"><path d="m37.826 8.731a2.6396 2.6396 0 0 1 2.8076 2.9648c0 1.9062-1.0303 3.002-2.8076 3.002h-2.1553v-5.9668zm-1.2285 5.123h1.125a1.8759 1.8759 0 0 0 1.9678-2.146 1.881 1.881 0 0 0-1.9678-2.1338h-1.125z"></path><path d="m41.681 12.444a2.1332 2.1332 0 1 1 4.2471 0 2.1336 2.1336 0 1 1-4.2471 0zm3.333 0c0-0.97607-0.43848-1.5469-1.208-1.5469-0.77246 0-1.207 0.5708-1.207 1.5469 0 0.98389 0.43457 1.5503 1.207 1.5503 0.76954-1e-5 1.208-0.57032 1.208-1.5503z"></path><path d="M51.57326,14.69775h-.92187l-.93066-3.31641h-.07031l-.92676,3.31641h-.91309l-1.24121-4.50293h.90137l.80664,3.436h.06641l.92578-3.436h.85254l.92578,3.436h.07031l.80273-3.436h.88867Z"></path><path d="m53.854 10.195h0.85546v0.71533h0.06641a1.348 1.348 0 0 1 1.3438-0.80225 1.4646 1.4646 0 0 1 1.5586 1.6748v2.915h-0.88867v-2.6918c0-0.72363-0.31445-1.0835-0.97168-1.0835a1.0329 1.0329 0 0 0-1.0752 1.1411v2.6343h-0.88867z"></path><path d="m59.094 8.437h0.88867v6.2607h-0.88867z"></path><path d="m61.218 12.444a2.1335 2.1335 0 1 1 4.2476 0 2.1338 2.1338 0 1 1-4.2476 0zm3.333 0c0-0.97607-0.43848-1.5469-1.208-1.5469-0.77246 0-1.207 0.5708-1.207 1.5469 0 0.98389 0.43457 1.5503 1.207 1.5503 0.76953-1e-5 1.208-0.57032 1.208-1.5503z"></path><path d="M66.4009,13.42432c0-.81055.60352-1.27783,1.6748-1.34424l1.21973-.07031v-.38867c0-.47559-.31445-.74414-.92187-.74414-.49609,0-.83984.18213-.93848.50049h-.86035c.09082-.77344.81836-1.26953,1.83984-1.26953,1.12891,0,1.76563.562,1.76563,1.51318v3.07666h-.85547v-.63281h-.07031a1.515,1.515,0,0,1-1.35254.707A1.36026,1.36026,0,0,1,66.4009,13.42432Zm2.89453-.38477v-.37646l-1.09961.07031c-.62012.0415-.90137.25244-.90137.64941,0,.40527.35156.64111.835.64111A1.0615,1.0615,0,0,0,69.29543,13.03955Z"></path><path d="m71.348 12.444c0-1.4228 0.73145-2.3242 1.8691-2.3242a1.484 1.484 0 0 1 1.3809 0.79h0.06641v-2.4731h0.88867v6.2607h-0.85156v-0.71143h-0.07031a1.5628 1.5628 0 0 1-1.4141 0.78564c-1.1455 5e-5 -1.8692-0.90134-1.8692-2.3276zm0.918 0c0 0.95508 0.4502 1.5298 1.2031 1.5298 0.749 0 1.2119-0.583 1.2119-1.5259 0-0.93848-0.46777-1.5298-1.2119-1.5298-0.74808 0-1.2032 0.57861-1.2032 1.5259z"></path><path d="m79.23 12.444a2.1332 2.1332 0 1 1 4.2471 0 2.1336 2.1336 0 1 1-4.2471 0zm3.333 0c0-0.97607-0.43848-1.5469-1.208-1.5469-0.77246 0-1.207 0.5708-1.207 1.5469 0 0.98389 0.43457 1.5503 1.207 1.5503 0.76953-1e-5 1.208-0.57032 1.208-1.5503z"></path><path d="m84.669 10.195h0.85547v0.71533h0.06641a1.348 1.348 0 0 1 1.3438-0.80225 1.4646 1.4646 0 0 1 1.5586 1.6748v2.915h-0.88867v-2.6918c0-0.72363-0.31445-1.0835-0.97168-1.0835a1.0329 1.0329 0 0 0-1.0752 1.1411v2.6343h-0.88867z"></path><path d="M93.51516,9.07373v1.1416h.97559v.74854h-.97559V13.2793c0,.47168.19434.67822.63672.67822a2.96657,2.96657,0,0,0,.33887-.02051v.74023a2.9155,2.9155,0,0,1-.4834.04541c-.98828,0-1.38184-.34766-1.38184-1.21582v-2.543h-.71484v-.74854h.71484V9.07373Z"></path><path d="m95.705 8.437h0.88086v2.4814h0.07031a1.3856 1.3856 0 0 1 1.373-0.80664 1.4834 1.4834 0 0 1 1.5508 1.6787v2.9072h-0.88956v-2.688c0-0.71924-0.335-1.0835-0.96289-1.0835a1.0519 1.0519 0 0 0-1.1338 1.1416v2.6299h-0.88867z"></path><path d="m104.76 13.482a1.828 1.828 0 0 1-1.9512 1.3027 2.0453 2.0453 0 0 1-2.0801-2.3242 2.0768 2.0768 0 0 1 2.0762-2.3525c1.2529 0 2.0088 0.856 2.0088 2.27v0.31009h-3.1797v0.0498a1.1902 1.1902 0 0 0 1.1992 1.29 1.0793 1.0793 0 0 0 1.0713-0.5459zm-3.126-1.4512h2.2744a1.0865 1.0865 0 0 0-1.1084-1.1665 1.1516 1.1516 0 0 0-1.166 1.1665z"></path></g></g></svg></span></a><a href="#"><span rel="noopener" target="_blank" class="linkButton"><svg locale="[object Object]" class="svgIcon appStoreGoogle" preserveAspectRatio="xMidYMid meet" viewBox="0 0 180 53.3" style="fill: rgb(32, 32, 38);"><g id="g10" transform="matrix(1.33333 0 0 -1.33333 0 80)"><g id="g12" transform="scale(.1)"><path id="path16" d="M1299.8 200H49.7c-27.5 0-50 22.5-50 50v300c0 27.5 22.5 50 50 50h1250c27.5 0 50-22.5 50-50V250c.1-27.5-22.4-50-49.9-50"></path><path id="path18" d="M1299.8 600H49.7c-27.5 0-50-22.5-50-50V250c0-27.5 22.5-50 50-50h1250c27.5 0 50 22.5 50 50v300c.1 27.5-22.4 50-49.9 50m0-8c23.2 0 42-18.8 42-42V250c0-23.2-18.8-42-42-42H49.7c-23.2 0-42 18.8-42 42v300c0 23.2 18.8 42 42 42h1250.1" fill="#36373A"></path><path id="path20" fill="#fff" d="M474 497.6c0-8.4-2.5-15-7.5-20-5.6-5.9-13-8.9-22-8.9-8.7 0-16 3-22.1 9s-9.1 13.4-9.1 22.3 3 16.3 9.1 22.3 13.4 9 22.1 9c4.3 0 8.4-.8 12.3-2.5 3.9-1.7 7-3.9 9.4-6.7l-5.3-5.3c-4 4.7-9.4 7.1-16.4 7.1-6.3 0-11.8-2.2-16.4-6.7-4.6-4.4-6.9-10.2-6.9-17.3s2.3-12.9 6.9-17.3c4.6-4.4 10.1-6.7 16.4-6.7 6.7 0 12.3 2.2 16.8 6.7 2.9 2.9 4.6 7 5 12.2h-21.8v7.2h29.1c.2-1.5.4-3 .4-4.4"></path><path id="path22" fill="#fff" d="M474 497.6h-1c0-8.2-2.4-14.5-7.2-19.3-5.5-5.7-12.5-8.6-21.3-8.6-8.4 0-15.5 2.9-21.4 8.7-5.9 5.8-8.8 13-8.8 21.6 0 8.7 2.9 15.8 8.8 21.6 5.9 5.8 12.9 8.7 21.4 8.7 4.2 0 8.1-.8 11.9-2.4 3.8-1.6 6.8-3.8 9-6.4l.8.6-.7.7-5.3-5.3.7-.7.8.6c-4.2 5-10 7.5-17.2 7.5-6.5 0-12.3-2.3-17.1-6.9-4.8-4.6-7.2-10.7-7.2-18s2.4-13.4 7.2-18 10.5-7 17.1-6.9c6.9 0 12.8 2.3 17.5 7 3.1 3.1 4.9 7.4 5.3 12.8l.1 1.1h-21.9v5.2h28.1v1l-1-.2c.3-1.5.4-3 .4-4.4h2c0 1.5-.1 3.1-.4 4.7l-.1.8h-30.9v-9.2h22.8v1l-1 .1c-.4-5-2-8.8-4.7-11.5-4.3-4.3-9.6-6.4-16.1-6.4-6.1 0-11.2 2.1-15.7 6.4-4.4 4.3-6.6 9.7-6.6 16.6s2.2 12.3 6.6 16.6c4.4 4.3 9.6 6.4 15.7 6.4 6.8 0 11.9-2.2 15.7-6.8l.7-.8 6 6.1.6.6-.6.7c-2.5 2.9-5.7 5.3-9.8 7-4 1.7-8.3 2.6-12.7 2.6-8.9 0-16.6-3.1-22.8-9.3-6.2-6.2-9.4-13.9-9.4-23s3.1-16.9 9.4-23c6.2-6.2 13.9-9.3 22.8-9.3 9.3 0 16.9 3.1 22.8 9.2l-.7.7.7-.7c5.2 5.2 7.8 12.2 7.7 20.7l-1-.2"></path><path id="path24" fill="#fff" d="M520.1 522.6h-27.3v-19h24.6v-7.2h-24.6v-19h27.3V470h-35v60h35v-7.4"></path><path id="path26" fill="#fff" d="M520.1 522.6v1h-28.3v-21h24.6v-5.2h-24.6v-21h27.3V471h-33v58h33v-6.4h1v1-1h1v8.4h-37v-62h37v9.4h-27.3v17h24.6v9.2h-24.6v17h27.3v1h-1"></path><path id="path28" fill="#fff" d="M552.6 470h-7.7v52.6h-16.8v7.4h41.2v-7.4h-16.8l.1-52.6"></path><path id="path30" fill="#fff" d="M552.6 470v1h-6.7v52.6h-16.8v5.4h39.2v-5.4h-16.8V470h1.1v1-1h1v51.6h16.8v9.4h-43.2v-9.4H544V469h9.7v1h-1.1"></path><path id="path32" fill="#fff" d="M599.2 470v60h7.7v-60h-7.7"></path><path id="path34" fill="#fff" d="M599.2 470h1v59h5.7v-58h-6.7v-1h1-1v-1h8.7v62h-9.7v-62h1v1"></path><path id="path36" fill="#fff" d="M641.1 470h-7.7v52.6h-16.8v7.4h41.2v-7.4H641l.1-52.6"></path><path id="path38" fill="#fff" d="M641.1 470v1h-6.7v52.6h-16.8v5.4h39.2v-5.4H640V470h1.1v1-1h1v51.6h16.7v9.4h-43.2v-9.4h16.8V469h9.7v1h-1"></path><path id="path40" fill="#fff" d="M697.6 482.8c4.4-4.5 9.9-6.7 16.3-6.7s11.9 2.2 16.3 6.7 6.7 10.2 6.7 17.2-2.2 12.7-6.7 17.2c-4.4 4.5-9.9 6.7-16.3 6.7s-11.9-2.2-16.3-6.7-6.7-10.2-6.7-17.2 2.3-12.7 6.7-17.2zm38.3-5c-5.9-6.1-13.2-9.1-22-9.1s-16.1 3-22 9.1-8.8 13.5-8.8 22.2 2.9 16.2 8.8 22.2c5.9 6.1 13.2 9.1 22 9.1 8.7 0 16-3 22-9.1 5.9-6.1 8.9-13.5 8.9-22.2-.1-8.8-3-16.2-8.9-22.2"></path><path id="path42" fill="#fff" d="M697.6 482.8l-.7-.7c4.6-4.7 10.4-7.1 17-7 6.7 0 12.4 2.4 17 7 4.6 4.7 7 10.7 7 17.9 0 7.2-2.3 13.2-7 17.9-4.6 4.7-10.4 7.1-17 7-6.7 0-12.4-2.4-17-7-4.6-4.7-7-10.7-6.9-17.9 0-7.2 2.3-13.2 6.9-17.9l.7.7.7.7c-4.2 4.3-6.4 9.7-6.4 16.5s2.1 12.2 6.4 16.5c4.3 4.3 9.4 6.4 15.6 6.4 6.2 0 11.3-2.1 15.6-6.4 4.2-4.3 6.4-9.7 6.4-16.5s-2.1-12.2-6.4-16.5c-4.3-4.3-9.4-6.4-15.6-6.4-6.2 0-11.3 2.1-15.6 6.4l-.7-.7zm38.3-5l-.7.7c-5.7-5.9-12.7-8.8-21.3-8.8-8.5 0-15.6 2.9-21.3 8.8-5.7 5.9-8.5 13-8.6 21.6 0 8.5 2.8 15.7 8.6 21.6 5.7 5.9 12.7 8.8 21.3 8.8 8.5 0 15.5-2.9 21.2-8.8 5.7-5.9 8.6-13 8.6-21.5s-2.8-15.7-8.6-21.6l.8-.8.7-.7c6.1 6.2 9.1 13.9 9.1 22.9 0 8.9-3.1 16.6-9.2 22.9-6.1 6.3-13.7 9.5-22.7 9.4-9 0-16.7-3.1-22.7-9.4-6.1-6.2-9.1-14-9.1-22.9 0-9 3-16.7 9.1-22.9 6.1-6.3 13.7-9.4 22.7-9.4s16.7 3.1 22.7 9.4l-.6.7"></path><path id="path44" fill="#fff" d="M755.6 470v60h9.4l29.2-46.7h.3l-.3 11.6V530h7.7v-60h-8l-30.5 48.9h-.3l.3-11.6V470h-7.8"></path><path id="path46" fill="#fff" d="M755.6 470h1v59h7.8l29.2-46.7h1.9l-.4 12.6V529h5.7v-58h-6.5l-30.5 48.9h-1.9l.4-12.6V471h-6.7v-1h1-1v-1h8.7v38.4L764 519h-1v-1h.3v1l-.8-.5 30.8-49.4h9.6v62h-9.7V495l.3-11.6h1v1h-.3v-1l.8.5-29.5 47.1h-10.9v-62h1v1"></path><path id="path48" fill="#fff" d="M1069.2 300h18.7v125h-18.7V300zm168 80l-21.4-54.2h-.6L1193 380h-20.1l33.3-75.8-19-42.1h19.5L1258 380h-20.8zm-105.8-65.8c-6.1 0-14.6 3.1-14.6 10.6 0 9.6 10.6 13.3 19.8 13.3 8.2 0 12.1-1.8 17.1-4.2-1.5-11.5-11.5-19.7-22.3-19.7zm2.3 68.5c-13.5 0-27.5-6-33.3-19.1l16.6-6.9c3.5 6.9 10.1 9.2 17.1 9.2 9.7 0 19.5-5.8 19.6-16.1v-1.3c-3.4 1.9-10.6 4.8-19.5 4.8-17.8 0-36-9.8-36-28.1 0-16.7 14.6-27.5 31-27.5 12.6 0 19.5 5.6 23.8 12.2h.6v-9.6h18v47.9c0 22.1-16.5 34.5-37.9 34.5zm-115.4-17.9h-26.5v42.9h26.5c13.9 0 21.9-11.5 21.9-21.4 0-9.8-7.9-21.5-21.9-21.5zm-.4 60.2h-44.7V300h18.6v47.4h26.1c20.7 0 41 15 41 38.8 0 23.8-20.4 38.8-41 38.8zM774.1 314.2c-12.9 0-23.7 10.8-23.7 25.6 0 15 10.8 25.9 23.7 25.9 12.7 0 22.7-11 22.7-25.9 0-14.8-10-25.6-22.7-25.6zm21.4 58.8h-.7c-4.2 5-12.2 9.5-22.4 9.5-21.3 0-40.8-18.7-40.8-42.7 0-23.8 19.5-42.4 40.8-42.4 10.1 0 18.2 4.5 22.4 9.7h.6V301c0-16.3-8.7-25-22.7-25-11.4 0-18.5 8.2-21.4 15.1l-16.3-6.8c4.7-11.3 17.1-25.1 37.7-25.1 21.9 0 40.4 12.9 40.4 44.3v76.4h-17.7V373h.1zm30.6-73h18.7v125h-18.7V300zm46.2 41.2c-.5 16.4 12.7 24.8 22.2 24.8 7.4 0 13.7-3.7 15.8-9l-38-15.8zm58 14.2c-3.5 9.5-14.3 27.1-36.4 27.1-21.9 0-40.1-17.2-40.1-42.5 0-23.8 18-42.5 42.2-42.5 19.5 0 30.8 11.9 35.4 18.8l-14.5 9.7c-4.8-7.1-11.4-11.8-20.9-11.8s-16.3 4.4-20.6 12.9l56.9 23.5-2 4.8zm-453.1 14v-18h43.2c-1.3-10.1-4.7-17.6-9.8-22.7-6.3-6.3-16.1-13.2-33.3-13.2-26.6 0-47.4 21.4-47.4 48s20.8 48 47.4 48c14.3 0 24.8-5.6 32.5-12.9l12.7 12.7c-10.8 10.3-25.1 18.2-45.3 18.2-36.4 0-67-29.6-67-66.1 0-36.4 30.6-66.1 67-66.1 19.7 0 34.5 6.4 46.1 18.5 11.9 11.9 15.6 28.7 15.6 42.2 0 4.2-.3 8.1-1 11.3l-60.7.1zM588 314.2c-12.9 0-24 10.6-24 25.8 0 15.3 11.1 25.8 24 25.8s24-10.5 24-25.8c0-15.2-11.1-25.8-24-25.8zm0 68.3c-23.5 0-42.7-17.9-42.7-42.5 0-24.5 19.2-42.5 42.7-42.5s42.7 18 42.7 42.5c0 24.6-19.2 42.5-42.7 42.5zm93.2-68.3c-12.9 0-24 10.6-24 25.8 0 15.3 11.1 25.8 24 25.8s24-10.5 24-25.8c0-15.2-11.2-25.8-24-25.8zm0 68.3c-23.5 0-42.7-17.9-42.7-42.5 0-24.5 19.2-42.5 42.7-42.5 23.5 0 42.7 18 42.7 42.5 0 24.6-19.2 42.5-42.7 42.5"></path><g id="g50"><defs><path id="SVGID_1_" d="M104.8 276.1l-.7.7c-2.9 3.1-4.6 7.9-4.6 14.1v-1.5 221.2-1.5c0 6.7 2 11.8 5.4 14.8L228.8 400l-124-123.9m-5.4 234.5v0m.1 1.7"></path></defs><clipPath id="SVGID_2_"><use xlink:href="#SVGID_1_" overflow="visible"></use></clipPath><g id="g52" clip-path="url(#SVGID_2_)"><linearGradient id="path72_1_" gradientUnits="userSpaceOnUse" x1="-18811.891" y1="-21267.199" x2="-18810.891" y2="-21267.199" gradientTransform="scale(-4.2194) rotate(45 -34956.32 11951.093)"><stop offset="0" stop-color="#00a0ff"></stop><stop offset=".007" stop-color="#00a1ff"></stop><stop offset=".26" stop-color="#00beff"></stop><stop offset=".512" stop-color="#00d2ff"></stop><stop offset=".76" stop-color="#00dfff"></stop><stop offset="1" stop-color="#00e3ff"></stop></linearGradient><path id="path72" d="M104.8 276.1l-.7.7c-2.9 3.1-4.6 7.9-4.6 14.1v-1.5 221.2-1.5c0 6.7 2 11.8 5.4 14.8L228.8 400l-124-123.9m-5.4 234.5v0m.1 1.7" fill="url(#path72_1_)"></path></g></g><g id="g74"><defs><path id="SVGID_3_" d="M270 357.2l.9.5 48.9 27.8c4.7 2.7 7.8 5.9 9.3 9.3-1.5-3.4-4.7-6.6-9.3-9.3l-48.9-27.8-.9-.5m0 1.5L228.8 400l41.3 41.3L320 413c6.3-3.6 9.9-8.2 10.5-13-.6-4.7-4.1-9.4-10.5-13l-50-28.3"></path></defs><clipPath id="SVGID_4_"><use xlink:href="#SVGID_3_" overflow="visible"></use></clipPath><g id="g76" clip-path="url(#SVGID_4_)"><linearGradient id="path92_1_" gradientUnits="userSpaceOnUse" x1="-20002.412" y1="-21661.736" x2="-20001.412" y2="-21661.736" gradientTransform="rotate(180 -42853.031 -46391.445) scale(4.3017)"><stop offset="0" stop-color="#ffe000"></stop><stop offset=".409" stop-color="#ffbd00"></stop><stop offset=".775" stop-color="orange"></stop><stop offset="1" stop-color="#ff9c00"></stop></linearGradient><path id="path92" d="M270 357.2l.9.5 48.9 27.8c4.7 2.7 7.8 5.9 9.3 9.3-1.5-3.4-4.7-6.6-9.3-9.3l-48.9-27.8-.9-.5m0 1.5L228.8 400l41.3 41.3L320 413c6.3-3.6 9.9-8.2 10.5-13-.6-4.7-4.1-9.4-10.5-13l-50-28.3" fill="url(#path92_1_)"></path></g></g><g id="g94"><defs><path id="SVGID_5_" d="M113.6 271.4c-3.5 0-6.5 1.1-8.8 3.2 2.4-2.1 5.4-3.2 8.8-3.2h.9-.9m0 1.5c-3.5 0-6.5 1.1-8.8 3.2l124 123.9 41.3-41.3-145.2-82.5c-4.1-2.3-7.9-3.3-11.3-3.3m-8.8 1.8l-.6.6.6-.6"></path></defs><clipPath id="SVGID_6_"><use xlink:href="#SVGID_5_" overflow="visible"></use></clipPath><g id="g96" clip-path="url(#SVGID_6_)"><linearGradient id="path108_1_" gradientUnits="userSpaceOnUse" x1="-18853.475" y1="-21699.688" x2="-18852.475" y2="-21699.688" gradientTransform="scale(-5.7218) rotate(45 -35562.742 11823.155)"><stop offset="0" stop-color="#ff3a44"></stop><stop offset="1" stop-color="#c31162"></stop></linearGradient><path id="path108" d="M113.6 271.4c-3.5 0-6.5 1.1-8.8 3.2 2.4-2.1 5.4-3.2 8.8-3.2h.9-.9m0 1.5c-3.5 0-6.5 1.1-8.8 3.2l124 123.9 41.3-41.3-145.2-82.5c-4.1-2.3-7.9-3.3-11.3-3.3m-8.8 1.8l-.6.6.6-.6" fill="url(#path108_1_)"></path></g></g><g id="g110"><defs><path id="SVGID_7_" d="M228.8 400l-124 123.9c2.4 2.1 5.4 3.2 8.8 3.2 3.4 0 7.2-1.1 11.2-3.4L270 441.2 228.8 400m42.2 42.2l-146.1 83c-4 2.3-7.8 3.4-11.2 3.4h.1c3.4 0 7.2-1.1 11.2-3.4l146-83m-157.5 86.4"></path></defs><clipPath id="SVGID_8_"><use xlink:href="#SVGID_7_" overflow="visible"></use></clipPath><g id="g112" clip-path="url(#SVGID_8_)"><linearGradient id="path130_1_" gradientUnits="userSpaceOnUse" x1="-16251.162" y1="-23175.293" x2="-16250.162" y2="-23175.293" gradientTransform="scale(2.555) rotate(-45 20145.964 -31121.24)"><stop offset="0" stop-color="#32a071"></stop><stop offset=".069" stop-color="#2da771"></stop><stop offset=".476" stop-color="#15cf74"></stop><stop offset=".801" stop-color="#06e775"></stop><stop offset="1" stop-color="#00f076"></stop></linearGradient><path id="path130" d="M228.8 400l-124 123.9c2.4 2.1 5.4 3.2 8.8 3.2 3.4 0 7.2-1.1 11.2-3.4L270 441.2 228.8 400m42.2 42.2l-146.1 83c-4 2.3-7.8 3.4-11.2 3.4h.1c3.4 0 7.2-1.1 11.2-3.4l146-83m-157.5 86.4" fill="url(#path130_1_)"></path></g></g><path id="path132" d="M114.6 271.4c3.1.2 6.6 1.3 10.3 3.3L270 357.2l-145.1-82.5c-3.7-2-7.2-3.1-10.3-3.3m-9.8 3.2c0 .1 0 0 0 0m-.7.7"></path><g id="g134"><defs><path id="SVGID_9_" d="M270 357.2l1 .6-1-.6"></path></defs><clipPath id="SVGID_10_"><use xlink:href="#SVGID_9_" overflow="visible"></use></clipPath><g id="g136" clip-path="url(#SVGID_10_)"><linearGradient id="path152_1_" gradientUnits="userSpaceOnUse" x1="-20002.412" y1="-21652.018" x2="-20001.412" y2="-21652.018" gradientTransform="rotate(180 -42853.031 -46391.445) scale(4.3017)"><stop offset="0" stop-color="#ccb300"></stop><stop offset=".409" stop-color="#cc9700"></stop><stop offset=".775" stop-color="#cc8400"></stop><stop offset="1" stop-color="#cc7d00"></stop></linearGradient><path id="path152" d="M270 357.2l.9.5-.9-.5" fill="url(#path152_1_)"></path></g></g><g id="g154"><defs><path id="SVGID_11_" d="M113.6 271.4c-3.5 0-6.5 1.1-8.8 3.3l-.6.6-.1.1.7.7c2.4-2.1 5.4-3.3 8.8-3.2 3.4 0 7.2 1.1 11.2 3.4L270 358.8l.9-.9-.9-.5-145.1-82.5c-3.7-2.1-7.1-3.2-10.3-3.3-.4-.2-.7-.2-1-.2"></path></defs><clipPath id="SVGID_12_"><use xlink:href="#SVGID_11_" overflow="visible"></use></clipPath><g id="g156" clip-path="url(#SVGID_12_)"><linearGradient id="path168_1_" gradientUnits="userSpaceOnUse" x1="-18853.475" y1="-21699.582" x2="-18852.475" y2="-21699.582" gradientTransform="scale(-5.7218) rotate(45 -35562.742 11823.155)"><stop offset="0" stop-color="#cc2e36"></stop><stop offset="1" stop-color="#9c0e4e"></stop></linearGradient><path id="path168" d="M113.6 271.4c-3.5 0-6.5 1.1-8.8 3.3l-.6.6-.1.1.7.7c2.4-2.1 5.4-3.3 8.8-3.2 3.4 0 7.2 1.1 11.2 3.4L270 358.8l.9-.9-.9-.5-145.1-82.5c-3.7-2.1-7.1-3.2-10.3-3.3-.4-.2-.7-.2-1-.2" fill="url(#path168_1_)"></path></g></g><path id="path170" d="M104.1 275.4c-2.9 3.1-4.6 7.9-4.6 14.1-.1-6.3 1.6-11.1 4.6-14.1"></path><g id="g172"><defs><path id="SVGID_13_" d="M104.1 275.4c-2.9 3.1-4.6 7.9-4.6 14.1v1.5c0-6.2 1.7-11 4.6-14.1l.7-.7-.7-.8"></path></defs><clipPath id="SVGID_14_"><use xlink:href="#SVGID_13_" overflow="visible"></use></clipPath><g id="g174" clip-path="url(#SVGID_14_)"><linearGradient id="path194_1_" gradientUnits="userSpaceOnUse" x1="-18811.891" y1="-21248.135" x2="-18810.891" y2="-21248.135" gradientTransform="scale(-4.2194) rotate(45 -34956.32 11951.093)"><stop offset="0" stop-color="#008de0"></stop><stop offset=".007" stop-color="#008de0"></stop><stop offset=".26" stop-color="#00a7e0"></stop><stop offset=".512" stop-color="#00b8e0"></stop><stop offset=".76" stop-color="#00c4e0"></stop><stop offset="1" stop-color="#00c7e0"></stop></linearGradient><path id="path194" d="M104.1 275.4c-2.9 3.1-4.6 7.9-4.6 14.1v1.5c0-6.2 1.7-11 4.6-14.1l.7-.7-.7-.8" fill="url(#path194_1_)"></path></g></g><g id="g196"><defs><path id="SVGID_15_" d="M104.1 275.4l.7.7-.7-.7"></path></defs><clipPath id="SVGID_16_"><use xlink:href="#SVGID_15_" overflow="visible"></use></clipPath><g id="g198" clip-path="url(#SVGID_16_)"><linearGradient id="path210_1_" gradientUnits="userSpaceOnUse" x1="-18853.475" y1="-21704.791" x2="-18852.475" y2="-21704.791" gradientTransform="scale(-5.7218) rotate(45 -35562.742 11823.155)"><stop offset="0" stop-color="#e0333c"></stop><stop offset="1" stop-color="#ab0f56"></stop></linearGradient><path id="path210" d="M104.1 275.4l.7.7-.7-.7" fill="url(#path210_1_)"></path></g></g><path id="path212" d="M329.3 394.8c.8 1.7 1.2 3.4 1.2 5.2-.1-1.8-.5-3.5-1.2-5.2"></path><g id="g214"><defs><path id="SVGID_17_" d="M271 357.8l-.9.9L320 387c6.3 3.6 9.9 8.2 10.5 13 0-1.7-.4-3.5-1.2-5.2-1.6-3.4-4.7-6.6-9.3-9.3l-49-27.7"></path></defs><clipPath id="SVGID_18_"><use xlink:href="#SVGID_17_" overflow="visible"></use></clipPath><g id="g216" clip-path="url(#SVGID_18_)"><linearGradient id="path232_1_" gradientUnits="userSpaceOnUse" x1="-20002.412" y1="-21657.006" x2="-20001.412" y2="-21657.006" gradientTransform="rotate(180 -42853.031 -46391.445) scale(4.3017)"><stop offset="0" stop-color="#e0c500"></stop><stop offset=".409" stop-color="#e0a600"></stop><stop offset=".775" stop-color="#e09100"></stop><stop offset="1" stop-color="#e08900"></stop></linearGradient><path id="path232" d="M271 357.8l-.9.9L320 387c6.3 3.6 9.9 8.2 10.5 13 0-1.7-.4-3.5-1.2-5.2-1.6-3.4-4.7-6.6-9.3-9.3l-49-27.7" fill="url(#path232_1_)"></path></g></g><path id="path234" fill="#404040" d="M330.4 400c0 5.2-3.5 10.5-10.5 14.4L271 442.2l48.9-27.8c7-3.9 10.5-9.2 10.5-14.4"></path><g id="g236"><defs><path id="SVGID_19_" d="M330.4 400c-.6 4.7-4.1 9.4-10.5 13L270 441.3l.9.9 48.9-27.8c7.1-3.9 10.6-9.2 10.6-14.4"></path></defs><clipPath id="SVGID_20_"><use xlink:href="#SVGID_19_" overflow="visible"></use></clipPath><g id="g238" clip-path="url(#SVGID_20_)"><linearGradient id="path254_1_" gradientUnits="userSpaceOnUse" x1="-20002.412" y1="-21666.815" x2="-20001.412" y2="-21666.815" gradientTransform="rotate(180 -42853.031 -46391.445) scale(4.3017)"><stop offset="0" stop-color="#ffe840"></stop><stop offset=".409" stop-color="#ffce40"></stop><stop offset=".775" stop-color="#ffbc40"></stop><stop offset="1" stop-color="#ffb540"></stop></linearGradient><path id="path254" d="M330.4 400c-.6 4.7-4.1 9.4-10.5 13L270 441.3l.9.9 48.9-27.8c7.1-3.9 10.6-9.2 10.6-14.4" fill="url(#path254_1_)"></path></g></g><path id="path256" fill="#404040" d="M99.5 512.2c0 .1 0 .1 0 0 0 .1 0 .1 0 0m0 .2c.6 10.3 6.2 16.2 14.1 16.2-3.4 0-6.4-1.1-8.7-3.2l-.7-.7c-2.8-2.9-4.4-7-4.7-12.3"></path><g id="g258"><defs><path id="SVGID_21_" d="M99.4 509.1v3.2c.3 5.3 2 9.5 4.6 12.3l.7-.7c-3.3-3-5.3-8.1-5.3-14.8m5.4 16.2"></path></defs><clipPath id="SVGID_22_"><use xlink:href="#SVGID_21_" overflow="visible"></use></clipPath><g id="g260" clip-path="url(#SVGID_22_)"><linearGradient id="path280_1_" gradientUnits="userSpaceOnUse" x1="-18811.891" y1="-21287.307" x2="-18810.891" y2="-21287.307" gradientTransform="scale(-4.2194) rotate(45 -34956.32 11951.093)"><stop offset="0" stop-color="#40b8ff"></stop><stop offset=".007" stop-color="#40b9ff"></stop><stop offset=".26" stop-color="#40ceff"></stop><stop offset=".512" stop-color="#40ddff"></stop><stop offset=".76" stop-color="#40e7ff"></stop><stop offset="1" stop-color="#40eaff"></stop></linearGradient><path id="path280" d="M99.4 509.1v3.2c.3 5.3 2 9.5 4.6 12.3l.7-.7c-3.3-3-5.3-8.1-5.3-14.8m5.4 16.2" fill="url(#path280_1_)"></path></g></g><path id="path282" fill="#404040" d="M113.5 528.6s.1 0 0 0c.1 0 0 0 0 0"></path><g id="g284"><defs><path id="SVGID_23_" d="M270 441.3l-145.1 82.5c-4 2.3-7.8 3.4-11.2 3.4-3.5 0-6.5-1.1-8.8-3.2l-.7.7.7.7c2.3 2.1 5.3 3.2 8.7 3.2 3.4 0 7.2-1.1 11.2-3.4l146.1-83-.9-.9"></path></defs><clipPath id="SVGID_24_"><use xlink:href="#SVGID_23_" overflow="visible"></use></clipPath><g id="g286" clip-path="url(#SVGID_24_)"><linearGradient id="path304_1_" gradientUnits="userSpaceOnUse" x1="-16251.162" y1="-23175.266" x2="-16250.162" y2="-23175.266" gradientTransform="scale(2.555) rotate(-45 20145.964 -31121.24)"><stop offset="0" stop-color="#65b895"></stop><stop offset=".069" stop-color="#62bd95"></stop><stop offset=".476" stop-color="#50db97"></stop><stop offset=".801" stop-color="#44ed98"></stop><stop offset="1" stop-color="#40f498"></stop></linearGradient><path id="path304" d="M270 441.3l-145.1 82.5c-4 2.3-7.8 3.4-11.2 3.4-3.5 0-6.5-1.1-8.8-3.2l-.7.7.7.7c2.3 2.1 5.3 3.2 8.7 3.2 3.4 0 7.2-1.1 11.2-3.4l146.1-83-.9-.9" fill="url(#path304_1_)"></path></g></g></g></g></svg></span></a></div><div class="footerCopyright"><div class="footerCopyText"><div>Copyright © 2022 ISG TV.</div><div> All Rights Reserved. All content uploaded to this platform are owned by the content creator with user rights expressed to ISG TV. Duplication of content is prohibited unless authorized by the content creator.</div></div></div></div></div></div></div><script src="//googleads.github.io/videojs-ima/node_modules/video.js/dist/video.min.js"></script><script src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script><script src="//googleads.github.io/videojs-ima/node_modules/videojs-contrib-ads/dist/videojs.ads.min.js"></script><script src="//googleads.github.io/videojs-ima/dist/videojs.ima.js"></script><script src="https://rawgit.com/kmoskwiak/videojs-resolution-switcher/dev/lib/videojs-resolution-switcher.js"></script><script src="https://cdn.jsdelivr.net/npm/videojs-seek-buttons/dist/videojs-seek-buttons.min.js"></script><script>var playvariable = true;
+
+                window.playMainPlayer = (adTagUrl, videoElem, videoId, vd, continuePlaying, startPosition) => {
+
+                    setTimeout(() => {
+
+                        if (player) {
+
+                            videojs(videoElem).dispose();
+
+                        } else {
+
+                            var player
+
+                        }
+
+                        if (adTagUrl == null) {
+
+                            var options = {
+
+                                id: videoElem
+
+                            };
+
+                        } else {
+
+                            var options = {
+
+                                id: videoElem,
+
+                                adTagUrl
+
+                            };
+
+                        }
+
+                        player = videojs(videoElem);
+
+                        try {
+
+                            if (adTagUrl != null) {
+
+                                player.ima(options);
+
+                            }
+
+                        } catch (error) {
+
+                            console.log('imaError', error)
+
+                        }
+
+                        playerEvents(player, videoId, vd, continuePlaying, startPosition);
+
+                        window.disposeMainPlayer = () => {
+
+                            console.log("Before", player.isDisposed());
+
+                            if (!player.isDisposed()) {
+
+                                player.dispose();
+
+                            }
+
+                            console.log("After", player.isDisposed());
+
+                        }
+
+
+
+                    }, 1000)
+
+
+
+                }
+
+                const playerEvents = (player, videoId, vd, continuePlaying, startPosition) => {
+
+                    var seconds = 60;
+
+                    let debounce = true;
+
+                    var prevTime;
+
+
+
+                    player.on("loadedmetadata", function () {
+
+                        console.log("loadedmetadata  event", this.currentTime(), continuePlaying, startPosition);
+
+                        this.pause();
+
+                        if (continuePlaying == true && startPosition) {
+
+                            this.currentTime(startPosition.toString());
+
+                            //set delay
+
+                        }
+
+                        setTimeout(() => {
+
+                            this.play();
+
+                        }, 500);
+
+                    });
+
+
+
+                    player.on("play", function () {
+
+                        window.onVideoPlay(vd, this.currentTime());
+
+                    });
+
+
+
+                    player.on("pause", function () {
+
+                        if (this.currentTime() == this.duration() || this.currentTime() == 0) {
+
+                            console.log("video ended/at starting point");
+
+                        } else {
+
+                            window.onVideoPause(vd, this.currentTime());
+
+                        }
+
+                    });
+
+
+
+                    player.on("timeupdate", function (e) {
+
+                        var hasPlayedTime = this.currentTime();
+
+                        var intPlayedTime = parseInt(hasPlayedTime, 10);
+
+                        var isSixty = intPlayedTime % seconds === 0 && intPlayedTime !== 0;
+
+                        if (isSixty && debounce) {
+
+                            debounce = false;
+
+                            prevTime = intPlayedTime;
+
+                            console.log("timeupdate  event", this.currentTime());
+
+                            window.onVideoPlaying(vd, this.currentTime());
+
+                        } else {
+
+                            if (debounce == false && prevTime != intPlayedTime) {
+
+                                debounce = true;
+
+                            }
+
+                        }
+
+                    });
+
+
+
+
+
+                    player.on("ended", function () {
+
+                        window.onVideoEnd(vd, this.currentTime());
+
+                    });
+
+                    player.on("adsready", function () {
+
+                        player.ima.addEventListener(google.ima.AdEvent.Type.STARTED, function () {
+
+                            console.log("ads STARTED");
+
+                            setTimeout(() => {
+
+                                console.log("ads STARTED ==> pause");
+
+                                player.pause();
+
+                            }, 2000);
+
+                        })
+
+                        player.ima.addEventListener(google.ima.AdEvent.Type.CONTENT_RESUME_REQUESTED, function () {
+
+                            console.log("ads CONTENT_RESUME_REQUESTED completed")
+
+                            player.play();
+
+                        });
+
+
+
+                        player.ima.addEventListener(google.ima.AdEvent.Type.ALL_ADS_COMPLETED, function () {
+
+                            console.log("ads completed")
+
+                            player.play();
+
+                        });
+
+                        player.ima.addEventListener(google.ima.AdErrorEvent.Type.AD_ERROR, function () {
+
+                            console.log("ads error")
+
+                            player.play();
+
+                        });
+
+                        player.ima.addEventListener(google.ima.AdErrorEvent.Type.PAUSED, function () {
+
+                            console.log("ads paused")
+
+                            player.play();
+
+                        });
+
+                    })
+
+                }
+
+
+
+
+
+
+
+
+
+                // const playerEvents = (player, videoId, vd, show_details) => {
+
+                //     if (playvariable === true) {
+
+                //         player.on("play", function () {
+
+                //             console.log('play');
+
+                //             window.onVideoPlay(videoId, vd, show_details);
+
+                //         });
+
+                //     } else {
+
+                //         window.onVideoResume(videoId, vd, show_details);
+
+                //     }
+
+
+
+                //     var orgValue = 0
+
+                //     var prevValue = 0
+
+                //     player.on('timeupdate', function (time) {
+
+                //         // console.log('time update', player.currentTime());
+
+                //         var currenttime = player.currentTime();
+
+                //         var value = Math.floor(currenttime);
+
+
+
+                //         if (value % 60 === 0) {
+
+                //             orgValue = value;
+
+                //         }
+
+
+
+                //         if (orgValue && orgValue !== prevValue) {
+
+                //             prevValue = orgValue
+
+                //             window.onVideoPlayInteval(vd, show_details);
+
+                //         }
+
+
+
+                //     });
+
+                //     player.on("pause", function () {
+
+                //         playvariable = false;
+
+                //         console.log('pause');
+
+                //         window.onVideoPause(vd, show_details);
+
+                //     });
+
+
+
+                //     player.on("end", function () {
+
+                //         console.log('end');
+
+                //         window.onVideoEnd(vd, show_details);
+
+                //     });
+
+
+
+                //     player.on("adsready", function () {
+
+                //         player.ima.addEventListener(google.ima.AdEvent.Type.CONTENT_RESUME_REQUESTED, function () {
+
+                //             console.log("ads CONTENT_RESUME_REQUESTED completed")
+
+                //             player.play();
+
+                //         });
+
+
+
+                //         player.ima.addEventListener(google.ima.AdEvent.Type.ALL_ADS_COMPLETED, function () {
+
+                //             console.log("ads completed")
+
+                //             player.play();
+
+                //         });
+
+                //         player.ima.addEventListener(google.ima.AdErrorEvent.Type.AD_ERROR, function () {
+
+                //             console.log("ads error")
+
+                //             player.play();
+
+                //         });
+
+                //         player.ima.addEventListener(google.ima.AdErrorEvent.Type.PAUSED, function () {
+
+                //             console.log("ads paused")
+
+                //             player.play();
+
+                //         });
+
+                //     })
+
+                // }</script><script>!function(l){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],f=0,i=[];f<n.length;f++)t=n[f],p[t]&&i.push(p[t][0]),p[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(l[r]=o[r]);for(s&&s(e);i.length;)i.shift()();return c.push.apply(c,u||[]),a()}function a(){for(var e,r=0;r<c.length;r++){for(var t=c[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==p[u]&&(n=!1)}n&&(c.splice(r--,1),e=f(f.s=t[0]))}return e}var t={},p={1:0},c=[];function f(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return l[e].call(r.exports,r,r.exports,f),r.l=!0,r.exports}f.m=l,f.c=t,f.d=function(e,r,t){f.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},f.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},f.t=function(r,e){if(1&e&&(r=f(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(f.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)f.d(t,n,function(e){return r[e]}.bind(null,n));return t},f.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return f.d(r,"a",r),r},f.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},f.p="/";var r=window.webpackJsonp=window.webpackJsonp||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;a()}([])</script><script src="/static/js/2.4294ab9c.chunk.js"></script><script src="/static/js/main.dff7b09f.chunk.js"></script><iframe name="__privateStripeMetricsController5720" frameborder="0" allowtransparency="true" scrolling="no" allow="payment *" src="https://js.stripe.com/v3/m-outer-6262077c14f753400d607dc30e70f1af.html#url=https%3A%2F%2Fstaging.iptvsolutionsgroup.com%2Ftermsandconditions&amp;title=ISG%20TV&amp;referrer=&amp;muid=e47e11cd-4cab-4346-95ec-8fad1937e480afae95&amp;sid=NA&amp;version=6&amp;preview=false" aria-hidden="true" tabindex="-1" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; visibility: hidden !important; position: fixed !important; height: 1px !important; pointer-events: none !important; user-select: none !important;"></iframe></body></html>
+    </objects>
+</document>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="watchLisCollectionViewCell" reuseIdentifier="searchCell" id="jnQ-M2-8ud" customClass="SearchCollectionCell" customModule="Runway_TV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="93" height="95"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="93" height="95"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OTa-PJ-NWD">
+                        <rect key="frame" x="0.0" y="0.0" width="93" height="75"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fT-Na-GHK">
+                        <rect key="frame" x="0.0" y="75" width="93" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="gmf-PN-fjU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTM-kE-7iy">
+                        <rect key="frame" x="8" y="37.5" width="77" height="0.0"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="PqI-2Q-xxH"/>
+            <constraints>
+                <constraint firstItem="3fT-Na-GHK" firstAttribute="trailing" secondItem="jnQ-M2-8ud" secondAttribute="trailing" id="0vj-GP-bew"/>
+                <constraint firstItem="OTa-PJ-NWD" firstAttribute="trailing" secondItem="jnQ-M2-8ud" secondAttribute="trailing" id="3Ig-Xi-lWj"/>
+                <constraint firstItem="OTa-PJ-NWD" firstAttribute="leading" secondItem="jnQ-M2-8ud" secondAttribute="leading" id="43c-oc-giw"/>
+                <constraint firstItem="OTa-PJ-NWD" firstAttribute="top" secondItem="jnQ-M2-8ud" secondAttribute="top" id="OAw-4y-PSl"/>
+                <constraint firstAttribute="bottom" secondItem="3fT-Na-GHK" secondAttribute="bottom" id="XMI-17-2cc"/>
+                <constraint firstItem="OTa-PJ-NWD" firstAttribute="width" secondItem="jnQ-M2-8ud" secondAttribute="width" id="Z2v-EQ-4Q8"/>
+                <constraint firstItem="mTM-kE-7iy" firstAttribute="centerY" secondItem="OTa-PJ-NWD" secondAttribute="centerY" id="kPc-5p-uQX"/>
+                <constraint firstItem="3fT-Na-GHK" firstAttribute="leading" secondItem="jnQ-M2-8ud" secondAttribute="leading" id="od2-mE-xzb"/>
+                <constraint firstItem="mTM-kE-7iy" firstAttribute="leading" secondItem="OTa-PJ-NWD" secondAttribute="leading" constant="8" id="qsr-cM-do5"/>
+                <constraint firstItem="mTM-kE-7iy" firstAttribute="trailing" secondItem="OTa-PJ-NWD" secondAttribute="trailing" constant="-8" id="uJI-qE-N5m"/>
+                <constraint firstItem="OTa-PJ-NWD" firstAttribute="bottom" secondItem="3fT-Na-GHK" secondAttribute="top" id="wfi-aA-crV"/>
+            </constraints>
+            <size key="customSize" width="93" height="95"/>
+            <connections>
+                <outlet property="ImageView" destination="OTa-PJ-NWD" id="qhR-l6-Pop"/>
+                <outlet property="imageWidth" destination="Z2v-EQ-4Q8" id="BEI-yh-arj"/>
+                <outlet property="titleLabel" destination="3fT-Na-GHK" id="Ws4-iu-D9i"/>
+                <outlet property="titlelabelHeight" destination="gmf-PN-fjU" id="Y4j-hc-SeE"/>
+                <outlet property="videoTitleLabel" destination="mTM-kE-7iy" id="lFu-iX-uRp"/>
+            </connections>
+            <point key="canvasLocation" x="-7" y="-200"/>
+        </collectionViewCell>
+    </objects>
+</document>

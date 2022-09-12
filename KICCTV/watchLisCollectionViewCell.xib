@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="watchLisCollectionViewCell" id="gTV-IL-0wX" customClass="watchLisCollectionViewCell" customModule="Chicano_Hollywood" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="93" height="95"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="93" height="95"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rgz-3t-10v">
+                        <rect key="frame" x="0.0" y="0.0" width="93" height="58"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bl-Yf-Um2">
+                        <rect key="frame" x="0.0" y="60" width="93" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="Mfd-NX-cC3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKy-PH-vUz">
+                        <rect key="frame" x="73" y="0.0" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="LxW-cR-wU4"/>
+                            <constraint firstAttribute="width" constant="20" id="YVu-rx-kky"/>
+                        </constraints>
+                        <state key="normal" image="TvexcelClose"/>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Rgz-3t-10v" secondAttribute="trailing" id="7x4-VV-du0"/>
+                <constraint firstAttribute="trailing" secondItem="iKy-PH-vUz" secondAttribute="trailing" id="G6p-H2-NB8"/>
+                <constraint firstItem="Rgz-3t-10v" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="SQv-vh-Qad"/>
+                <constraint firstAttribute="trailing" secondItem="9bl-Yf-Um2" secondAttribute="trailing" id="TQA-wB-rGp"/>
+                <constraint firstItem="Rgz-3t-10v" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="erc-pe-ucB"/>
+                <constraint firstAttribute="bottom" secondItem="9bl-Yf-Um2" secondAttribute="bottom" id="jXB-rI-nkZ"/>
+                <constraint firstItem="9bl-Yf-Um2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="l8F-9U-ADe"/>
+                <constraint firstItem="iKy-PH-vUz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="rvd-sy-eDs"/>
+                <constraint firstItem="9bl-Yf-Um2" firstAttribute="top" secondItem="Rgz-3t-10v" secondAttribute="bottom" constant="2" id="sb3-xP-xHq"/>
+            </constraints>
+            <size key="customSize" width="93" height="95"/>
+            <connections>
+                <outlet property="closeButton" destination="iKy-PH-vUz" id="jGt-VT-uye"/>
+                <outlet property="videoImage" destination="Rgz-3t-10v" id="7A3-Yv-zgq"/>
+                <outlet property="videoLabel" destination="9bl-Yf-Um2" id="VDp-W5-ZAp"/>
+            </connections>
+            <point key="canvasLocation" x="133" y="-8"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="TvexcelClose" width="82" height="82"/>
+    </resources>
+</document>

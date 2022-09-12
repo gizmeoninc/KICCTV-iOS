@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="trendingTableCell" rowHeight="117" id="7tU-To-pUw" customClass="TrendingVideoTableViewCell" customModule="Justwatchme_tv" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="117"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7tU-To-pUw" id="GY3-A4-MlO">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="117"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="cls-YH-7KT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QXl-zy-Kt8">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ez1-fu-IXh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="Wz5-A3-aRG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cls-YH-7KT" firstAttribute="leading" secondItem="GY3-A4-MlO" secondAttribute="leading" id="36v-gg-3wd"/>
+                    <constraint firstAttribute="bottom" secondItem="cls-YH-7KT" secondAttribute="bottom" constant="8" id="F6b-eY-Kgt"/>
+                    <constraint firstItem="Ez1-fu-IXh" firstAttribute="leading" secondItem="cls-YH-7KT" secondAttribute="leading" id="QP4-a7-VYn"/>
+                    <constraint firstItem="cls-YH-7KT" firstAttribute="top" secondItem="GY3-A4-MlO" secondAttribute="top" id="RCg-uL-RUv"/>
+                    <constraint firstItem="Ez1-fu-IXh" firstAttribute="top" secondItem="cls-YH-7KT" secondAttribute="top" id="hgm-y4-pKn"/>
+                    <constraint firstItem="Ez1-fu-IXh" firstAttribute="trailing" secondItem="GY3-A4-MlO" secondAttribute="trailing" id="m3w-lA-Ysy"/>
+                    <constraint firstAttribute="trailing" secondItem="cls-YH-7KT" secondAttribute="trailing" id="x1q-bf-6ER"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="TE3-Mi-sNH"/>
+            <connections>
+                <outlet property="topGradientView" destination="Ez1-fu-IXh" id="n1G-sh-6bQ"/>
+                <outlet property="treandingVideoCollecctionView" destination="cls-YH-7KT" id="uNv-Mf-16O"/>
+            </connections>
+            <point key="canvasLocation" x="464" y="131"/>
+        </tableViewCell>
+    </objects>
+</document>

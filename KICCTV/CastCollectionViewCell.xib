@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CastCollectionCell" id="tF3-QN-ePx" customClass="CastCollectionViewCell" customModule="Justwatchme_tv" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="272" height="201"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="272" height="201"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gnU-pc-vfc">
+                        <rect key="frame" x="2" y="-2" width="270" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="TlC-Ro-1kW"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NCu-MR-Klm">
+                        <rect key="frame" x="2" y="150" width="270" height="0.0"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jl3-l6-65G">
+                        <rect key="frame" x="2" y="152" width="270" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="zGV-j0-QPk"/>
+            <constraints>
+                <constraint firstItem="Jl3-l6-65G" firstAttribute="trailing" secondItem="NCu-MR-Klm" secondAttribute="trailing" id="2He-Eb-VEU"/>
+                <constraint firstAttribute="top" secondItem="gnU-pc-vfc" secondAttribute="top" constant="2" id="5qa-KQ-JdZ"/>
+                <constraint firstItem="Jl3-l6-65G" firstAttribute="leading" secondItem="NCu-MR-Klm" secondAttribute="leading" id="E9l-eL-98y"/>
+                <constraint firstItem="Jl3-l6-65G" firstAttribute="top" secondItem="NCu-MR-Klm" secondAttribute="bottom" constant="2" id="GRE-SE-QU6"/>
+                <constraint firstItem="NCu-MR-Klm" firstAttribute="top" secondItem="gnU-pc-vfc" secondAttribute="bottom" constant="2" id="UJ4-8c-jTi"/>
+                <constraint firstItem="gnU-pc-vfc" firstAttribute="leading" secondItem="tF3-QN-ePx" secondAttribute="leading" constant="2" id="hfF-Fb-jUU"/>
+                <constraint firstItem="NCu-MR-Klm" firstAttribute="trailing" secondItem="gnU-pc-vfc" secondAttribute="trailing" id="hxD-Xf-E65"/>
+                <constraint firstAttribute="trailing" secondItem="gnU-pc-vfc" secondAttribute="trailing" id="r0p-1H-aG0"/>
+                <constraint firstItem="NCu-MR-Klm" firstAttribute="leading" secondItem="gnU-pc-vfc" secondAttribute="leading" id="xYk-fM-Hn7"/>
+            </constraints>
+            <size key="customSize" width="272" height="201"/>
+            <connections>
+                <outlet property="imageHeight" destination="TlC-Ro-1kW" id="DNB-SD-rNy"/>
+                <outlet property="imageView" destination="gnU-pc-vfc" id="2C8-fU-oBx"/>
+                <outlet property="name" destination="NCu-MR-Klm" id="ePP-al-yLE"/>
+                <outlet property="role" destination="Jl3-l6-65G" id="gAd-9H-fhF"/>
+            </connections>
+            <point key="canvasLocation" x="22.265625" y="25.695461200585651"/>
+        </collectionViewCell>
+    </objects>
+</document>

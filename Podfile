@@ -1,0 +1,40 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'KICCTV' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  platform :ios, '9.0'
+  use_frameworks!
+  pod 'SDWebImage'
+  pod 'ReachabilitySwift', '~> 4.3.0'
+  pod 'ModelMapper'
+  pod 'SummerSlider'
+  pod 'SwiftyStoreKit'
+  pod 'SideMenu'
+  pod 'IQKeyboardManagerSwift'
+  pod 'FBSDKCoreKit'
+
+  pod 'FBSDKLoginKit'
+  pod 'FacebookLogin'
+  pod 'FacebookCore'
+  #pod 'FBSDKCoreKit',  '~> 4.42.0'
+  #pod 'FBSDKLoginKit',  '~> 4.42.0'
+  #pod 'FBSDKShareKit' , '~> 4.42.0'
+  pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
+  pod 'Firebase/RemoteConfig'
+  pod 'Fabric'
+  pod 'Firebase/Crashlytics'
+  pod 'JNKeychain'
+  pod 'Alamofire'
+  pod 'PopupDialog'
+  pod 'Firebase/Auth'
+  pod 'KWVerificationCodeView'
+  pod 'OTPTextField'
+  pod 'google-cast-sdk-no-bluetooth'
+  pod 'ADCountryPicker'
+  pod 'MarqueeLabel'
+  pod 'GoSwiftyM3U8'
+  pod 'GoogleAds-IMA-iOS-SDK', '~> 3.11.2'
+  pod 'CocoaAsyncSocket'
+  end
